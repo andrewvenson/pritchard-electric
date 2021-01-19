@@ -1,0 +1,111 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "630c29e4e0229455b906",
+  "publicPath": "/static/",
+  "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
+  "assetsByChunkName": {
+    "list": [
+      "list.module.js",
+      "list.eaeaf0aa111a0ff47f99.hot-update.js"
+    ],
+    "pritchard-electric": "pritchard-electric.module.js"
+  },
+  "assets": [
+    {
+      "name": "eaeaf0aa111a0ff47f99.hot-update.json",
+      "size": 46,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "list.eaeaf0aa111a0ff47f99.hot-update.js",
+      "size": 9949,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 59218,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "pritchard-electric.module.js",
+      "size": 5275637,
+      "chunks": [
+        "pritchard-electric"
+      ],
+      "chunkNames": [
+        "pritchard-electric"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "pritchard-electric": {
+      "chunks": [
+        "pritchard-electric"
+      ],
+      "assets": [
+        "pritchard-electric.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "pritchard-electric": {
+      "chunks": [
+        "pritchard-electric"
+      ],
+      "assets": [
+        "pritchard-electric.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js",
+        "list.eaeaf0aa111a0ff47f99.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
