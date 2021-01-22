@@ -25,7 +25,19 @@ const Home = (props) => {
             </section>
 
             <section style={{ width: "100%", height: "633.83px", display: "flex"}}>
-                <div style={{...transition, borderTop: `6px solid ${color.one}`}} onMouseOver={() => {setColor({...color, one: "white"})}} onMouseLeave={() => {setColor({...color, one: "#1f40a3"})}}>Test</div>
+                <div style={{...transition, borderTop: `6px solid ${color.one}`, position: "relative" }} onMouseOver={() => {setColor({...color, one: "white"})}} onMouseLeave={() => {setColor({...color, one: "#1f40a3"})}}>
+                    <div style={{backgroundColor: "rgba(0, 0, 0, 0.5)", width: "100%", height: "100%", zIndex: 1}}></div>
+                    <div style={{width: "100%", height: "100%", backgroundPosition: "center", backgroundAttachment: "fixed", backgroundRepeat: "no-repeat",  position: "absolute", top: 0, zIndex: -5, background: "url('https://1888electricalservices.com/wp-content/uploads/2020/10/breaker-5-opt.jpg')", backgroundColor: "black"}}>
+                    </div>
+                    <div style={{width: "100%", height: "100%", zIndex: 50, display: "flex", justifyContent: "center", alignItems: "center", color: "white", position: "absolute", top: 0}}>
+                        <div style={{display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", padding: 25}}>
+                            <h1>Eletrical Panel Upgrades</h1>
+                            <div style={{borderBottom: "1px solid white", width: "100%"}}></div>
+                            <p>MAKE FLICKERING LIGHTS AND TRIPPED CIRCUIT BREAKERS A THING OF THE PAST BY GETTING AN ELECTRICAL PANEL UPGRADE.</p>
+                        </div>
+                    </div>
+                    
+                </div>
                 <div style={{...transition, borderTop: `6px solid ${color.two}`}} onMouseOver={() => {setColor({...color, two: "white"})}} onMouseLeave={() => {setColor({...color, two: "#1f40a3"})}}>Test</div>
                 <div style={{...transition, borderTop: `6px solid ${color.three}`}} onMouseOver={() => {setColor({...color, three: "white"})}} onMouseLeave={() => {setColor({...color, three: "#1f40a3"})}}>Test</div>
                 <div style={{...transition, borderTop: `6px solid ${color.four}`}} onMouseOver={() => {setColor({...color, four: "white"})}} onMouseLeave={() => {setColor({...color, four: "#1f40a3"})}}>Test</div>
