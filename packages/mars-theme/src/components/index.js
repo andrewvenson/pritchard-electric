@@ -5,6 +5,7 @@ import Header from "./header";
 import List from "./list";
 import Post from "./post";
 import Loading from "./loading";
+import Home from "./home";
 import Title from "./title";
 import PageError from "./page-error";
 import Nav from "./nav";
@@ -47,6 +48,7 @@ const Theme = ({ state }) => {
           <List when={data.isArchive} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
+          <Home when={data.isHome} />
         </Switch>
       </Main>
     </>

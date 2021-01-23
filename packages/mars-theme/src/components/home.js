@@ -1,12 +1,7 @@
 import React, {useEffect, useState} from "react";
-import { styled, connect, Global } from "frontity";
+import { styled, connect, Global, decode } from "frontity";
 
 const Home = (props) => {
-
-    useEffect(() => {
-
-
-    }, [])
 
     const [color, setColor] = useState({
         one: ["#1f40a3", 1, 0.5],
@@ -106,4 +101,4 @@ const Home = (props) => {
 };
 
 // Connect the Item to gain access to `state` as a prop
-export default Home
+export default connect(Home)

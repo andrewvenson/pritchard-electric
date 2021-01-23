@@ -3,6 +3,14 @@ import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import link from "@frontity/html2react/processors/link";
 
+
+const homeHandler = {
+  pattern: "/",
+  func: ({ state }) => {
+    state.source.data["/"].isHome = true;
+  }
+}
+
 const marsTheme = {
   name: "@frontity/mars-theme",
   roots: {
@@ -40,6 +48,9 @@ const marsTheme = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
+      init: ({libraries}) => {
+        libraries.source.handlers.push(homeHandler)
+      }
     },
   },
   libraries: {

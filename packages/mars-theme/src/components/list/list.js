@@ -10,9 +10,6 @@ const List = ({ state }) => {
 
   return (
     <Container>
-      {state.router.link == "/" ?
-
-      <Home link={state.router.link} /> :
       <div>
         {data.isTaxonomy && (
           <Header>
@@ -37,7 +34,6 @@ const List = ({ state }) => {
         <Pagination />
       </div>
     
-    }
       {/* If the list is a taxonomy, we render a title. */}
     </Container>
   );
