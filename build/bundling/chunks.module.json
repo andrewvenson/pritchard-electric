@@ -2,28 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "e759c98b83bb307d57c5",
+  "hash": "e6fee4fb26724f4e13cd",
   "publicPath": "/static/",
   "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
-    "pritchard-electric": [
-      "pritchard-electric.module.js",
-      "pritchard-electric.c2b9cf4c6f674931491c.hot-update.js"
-    ]
+    "pritchard-electric": "pritchard-electric.module.js"
   },
   "assets": [
-    {
-      "name": "c2b9cf4c6f674931491c.hot-update.json",
-      "size": 60,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
     {
       "name": "list.module.js",
       "size": 48630,
@@ -37,23 +23,8 @@
       "emitted": false
     },
     {
-      "name": "pritchard-electric.c2b9cf4c6f674931491c.hot-update.js",
-      "size": 23293,
-      "chunks": [
-        "pritchard-electric"
-      ],
-      "chunkNames": [
-        "pritchard-electric"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "pritchard-electric.module.js",
-      "size": 5317412,
+      "size": 5316844,
       "chunks": [
         "pritchard-electric"
       ],
@@ -61,7 +32,8 @@
         "pritchard-electric"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true,
+      "isOverSizeLimit": true
     }
   ],
   "filteredAssets": 0,
@@ -71,8 +43,7 @@
         "pritchard-electric"
       ],
       "assets": [
-        "pritchard-electric.module.js",
-        "pritchard-electric.c2b9cf4c6f674931491c.hot-update.js"
+        "pritchard-electric.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,8 +55,7 @@
         "pritchard-electric"
       ],
       "assets": [
-        "pritchard-electric.module.js",
-        "pritchard-electric.c2b9cf4c6f674931491c.hot-update.js"
+        "pritchard-electric.module.js"
       ],
       "children": {},
       "childAssets": {}
