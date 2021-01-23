@@ -19,19 +19,19 @@ const settings = {
             ],
             [
               "SERVICES",
-              "/category/nature/"
+              "/"
             ],
             [
               "GALLERY",
-              "/category/travel/"
+              "/gallery"
             ],
             [
               "FAQ",
-              "/tag/japan/"
+              "/faq"
             ],
             [
               "CONTACT",
-              "/about-us/"
+              "/contact"
             ]
           ],
           "featured": {
@@ -45,7 +45,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "http://localhost/pedev"
         }
       }
     },

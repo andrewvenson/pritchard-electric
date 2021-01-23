@@ -68,6 +68,9 @@ const globalStyles = css`
     color: inherit;
     text-decoration: none;
   }
+  section > h1 > p {
+    margin: 0;
+  }
 `;
 
 const HeadContainer = styled.div`
