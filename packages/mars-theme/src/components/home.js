@@ -19,15 +19,16 @@ const Home = (props) => {
     }
     
     return (
-        <div style={{width: "100%"}}>
+        <div style={{width: "100%", height: "100%"}}>
             <section style={{display: "flex", justifyContent: "center", alignItems: "center", minHeight: 600, backgroundImage: "url('https://wallpaperaccess.com/full/2114804.jpg')", backgroundAttachment: "fixed", backgroundRepeat: "no-repeat", backgroundSize: "100% 100%"}}>
                 <h1 style={{color:"white", fontSize: 70}}>KEEP YOUR WORKSPACE SAFE</h1>
             </section>
 
-            <section style={{ width: "100%", height: "633.83px", display: "flex"}}>
+            {/* Service Sections */}
+            <section style={{ width: "100%", height: "25%", display: "flex"}}>
                 <div style={{...transition, borderTop: `6px solid ${color.one}`, position: "relative" }} onMouseOver={() => {setColor({...color, one: "white"})}} onMouseLeave={() => {setColor({...color, one: "#1f40a3"})}}>
                     <div style={{backgroundColor: "rgba(0, 0, 0, 0.5)", width: "100%", height: "100%", zIndex: 1}}></div>
-                    <div style={{width: "100%", height: "100%", backgroundPosition: "center", backgroundAttachment: "fixed", backgroundRepeat: "no-repeat",  position: "absolute", top: 0, zIndex: -5, background: "url('https://1888electricalservices.com/wp-content/uploads/2020/10/breaker-5-opt.jpg')", backgroundColor: "black"}}>
+                    <div style={{width: "100%", height: "100%", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "100% 100%", position: "absolute", top: 0, zIndex: -5, backgroundImage: "url('https://1888electricalservices.com/wp-content/uploads/2020/10/breaker-5-opt.jpg')"}}>
                     </div>
                     <div style={{width: "100%", height: "100%", zIndex: 50, display: "flex", justifyContent: "center", alignItems: "center", color: "white", position: "absolute", top: 0}}>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center", padding: 25}}>
