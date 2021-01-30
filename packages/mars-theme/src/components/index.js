@@ -71,6 +71,26 @@ const globalStyles = css`
   section > h1 > p {
     margin: 0;
   }
+
+  @media screen and (max-width: 1086px) {
+    .desktopView {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 1086px) {
+    .mobileView {
+      display: block !important;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .mobile560View {
+      display: block !important;
+    }
+    .mobileView {
+      display: none !important;
+    }
+  }
 `;
 
 const HeadContainer = styled.div`

@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "e6fee4fb26724f4e13cd",
+  "hash": "23c67c050733d1bc3f2e",
   "publicPath": "/static/",
   "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
   "assetsByChunkName": {
@@ -24,7 +24,7 @@
     },
     {
       "name": "pritchard-electric.module.js",
-      "size": 5316844,
+      "size": 5385130,
       "chunks": [
         "pritchard-electric"
       ],
@@ -32,8 +32,7 @@
         "pritchard-electric"
       ],
       "info": {},
-      "emitted": true,
-      "isOverSizeLimit": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
