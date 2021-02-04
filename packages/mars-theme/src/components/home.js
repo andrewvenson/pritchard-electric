@@ -1249,7 +1249,7 @@ const Home = ({ state, actions }) => {
           </button>
         </section>
 
-        <div
+        <section
           style={{
             backgroundColor: "#1f40a3",
             width: "100%",
@@ -1293,10 +1293,152 @@ const Home = ({ state, actions }) => {
           >
             <img
               src="http://pritchardelectric.net/files/2014/04/52Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t"
-              alt="Electric testing"
+              alt
               width="100%"
             />
           </div>
+        </section>
+
+        <section
+          style={{
+            backgroundColor: "white",
+            padding: "0px 45px 0px 45px",
+          }}
+        >
+          <div
+            style={{
+              textAlign: "center",
+              paddingBottom: "45px",
+            }}
+          >
+            <h1>PUT A LICENSED ELECTRICIAN IN YOUR CONTACT LIST</h1>
+            <h3>MAKE US YOUR SOURCE FOR ELECTRICAL SERVICES IN AUSTIN, TX</h3>
+            <p>
+              Need a few electrical repairs or upgrades done around the house?
+              You can call Pritchard Electric, LLC for electrical issues of all
+              kinds, including repairs, electrical panel upgrades, lighting
+              services and new wiring installations.
+            </p>
+            <p>
+              Trust your home or business to an electrician with over 10 years
+              of experience.
+            </p>
+          </div>
+        </section>
+        <section
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            backgroundColor: "white",
+          }}
+        >
+          <div
+            style={{
+              width: "65%",
+              display: "flex",
+              padding: "10px",
+              justifyContent: "flex-end",
+            }}
+          >
+            <div style={{ maxWidth: "653px" }}>
+              <img
+                style={{ width: "100%", maxWidth: "652px", height: "275px" }}
+                src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
+                alt="Count on us for commercial electrical services"
+              />
+              <h1>COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES</h1>
+              <p>
+                Do you own a business or commercial property in the Travis
+                County area? Pritchard Electric provides commercial electrical
+                services for:
+              </p>
+              <ul>
+                <li>Office buildings</li>
+                <li>Apartment complexes</li>
+                <li>Retail shops and warehouses</li>
+              </ul>
+              <p>
+                Keep business running smoothly. Contact Austin, TX's premier
+                commercial electrician today at 512-252-4699. We serve customers
+                throughout the surrounding areas. Remember to ask for a free
+                estimate on equipment upgrades or any other electrical service.
+              </p>
+            </div>
+          </div>
+          <div style={{ width: "35%", padding: "10px" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-start",
+              }}
+            >
+              <form style={{ width: "300px" }}>
+                <label>
+                  <span>Name *</span>
+                  <br />
+                  <input type="text" style={{ width: "100%" }} />
+                  <br />
+                  <span style={{ fontSize: 12 }}>First</span>
+                  <br />
+                  <label>
+                    <input type="text" style={{ width: "100%" }} />
+                    <br />
+                    <span style={{ fontSize: 12 }}>Last</span>
+                  </label>
+                </label>
+                <br />
+                <br />
+                <label>
+                  <span>Phone *</span>
+                  <br />
+                  <input type="phone" style={{ width: "100%" }} />
+                </label>
+                <br />
+                <br />
+                <label>
+                  <span>Email *</span>
+                  <br />
+                  <input type="email" style={{ width: "100%" }} />
+                </label>
+                <br />
+                <br />
+                <label>
+                  <span>Message/Suggestions *</span>
+                  <br />
+                  <textarea
+                    type="text"
+                    style={{ width: "100%", height: "100px", resize: "none" }}
+                  />
+                </label>
+                <br />
+                <br />
+                <label>
+                  <span>Security Check *</span>
+                </label>
+                <br />
+                <br />
+                <button
+                  style={{
+                    padding: 10,
+                    border: "none",
+                    backgroundColor: "#f4bb36",
+                    color: "white",
+                    width: "100%",
+                    fontSize: 20,
+                    fontWeight: "light",
+                  }}
+                >
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div style={{ padding: 25, display: "flex", justifyContent: "center" }}>
+          <img
+            style={{ width: 145, height: 60 }}
+            src="http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n-1.png"
+          />
         </div>
       </div>
     );
