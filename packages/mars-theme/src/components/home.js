@@ -1253,7 +1253,7 @@ const Home = ({ state, actions }) => {
           style={{
             backgroundColor: "#1f40a3",
             width: "100%",
-            height: "633.83px",
+            height: "25vw",
             display: "flex",
             color: "white",
             paddingTop: 75,
