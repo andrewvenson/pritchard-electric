@@ -35,6 +35,21 @@ const Home = ({ state, actions }) => {
     height: "110vw",
   };
 
+  const contactInput = {
+    border: "1px solid lightgray",
+    height: "30px",
+    width: "100%",
+    backgroundColor: "whitesmoke",
+    marginTop: "4px",
+  };
+
+  const contactSuggestions = {
+    border: "1px solid lightgray",
+    width: "100%",
+    backgroundColor: "whitesmoke",
+    marginTop: "4px",
+  };
+
   if (data.isPost) {
     const category = state.source.post[data.id];
     const firstHeader = category.content.rendered;
@@ -1272,13 +1287,22 @@ const Home = ({ state, actions }) => {
               IT'S TIME TO CALL YOUR ELECTRICIAN IF YOU NOTICE THESE SIGNS
             </h1>
             <p>
-              Avoid that nightmare cmopletely. Call an electrician from
+              Avoid that nightmare completely. Call an electrician from
               Pritchard Electric right away if you notice:
             </p>
 
+            <ul>
+              <li>Discolored or malfunctioning outlets</li>
+              <li>Lights that flicker or buzz</li>
+              <li>Frequently tripped circuit breakers</li>
+            </ul>
+
             <p>
-              We provide a wide range of residential electrical services in
-              Austin, Texas and the surrounding area.
+              We provide a wide range of{" "}
+              <u>
+                <a href="">residential electrical services</a>
+              </u>{" "}
+              in Austin, Texas and the surrounding area.
             </p>
           </div>
           <div style={{ height: "100%", border: "2px solid white" }}></div>
@@ -1311,8 +1335,12 @@ const Home = ({ state, actions }) => {
               paddingBottom: "45px",
             }}
           >
-            <h1>PUT A LICENSED ELECTRICIAN IN YOUR CONTACT LIST</h1>
-            <h3>MAKE US YOUR SOURCE FOR ELECTRICAL SERVICES IN AUSTIN, TX</h3>
+            <h1 style={{ color: "#1f40a3" }}>
+              PUT A LICENSED ELECTRICIAN IN YOUR CONTACT LIST
+            </h1>
+            <h3 style={{ color: "#1f40a3" }}>
+              MAKE US YOUR SOURCE FOR ELECTRICAL SERVICES IN AUSTIN, TX
+            </h3>
             <p>
               Need a few electrical repairs or upgrades done around the house?
               You can call Pritchard Electric, LLC for electrical issues of all
@@ -1346,7 +1374,9 @@ const Home = ({ state, actions }) => {
                 src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
                 alt="Count on us for commercial electrical services"
               />
-              <h1>COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES</h1>
+              <h1 style={{ color: "#1f40a3" }}>
+                COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES
+              </h1>
               <p>
                 Do you own a business or commercial property in the Travis
                 County area? Pritchard Electric provides commercial electrical
@@ -1376,12 +1406,12 @@ const Home = ({ state, actions }) => {
                 <label>
                   <span>Name *</span>
                   <br />
-                  <input type="text" style={{ width: "100%" }} />
+                  <input type="text" style={{ ...contactInput }} />
                   <br />
                   <span style={{ fontSize: 12 }}>First</span>
                   <br />
                   <label>
-                    <input type="text" style={{ width: "100%" }} />
+                    <input type="text" style={{ ...contactInput }} />
                     <br />
                     <span style={{ fontSize: 12 }}>Last</span>
                   </label>
@@ -1391,14 +1421,14 @@ const Home = ({ state, actions }) => {
                 <label>
                   <span>Phone *</span>
                   <br />
-                  <input type="phone" style={{ width: "100%" }} />
+                  <input type="phone" style={{ ...contactInput }} />
                 </label>
                 <br />
                 <br />
                 <label>
                   <span>Email *</span>
                   <br />
-                  <input type="email" style={{ width: "100%" }} />
+                  <input type="email" style={{ ...contactInput }} />
                 </label>
                 <br />
                 <br />
@@ -1407,7 +1437,11 @@ const Home = ({ state, actions }) => {
                   <br />
                   <textarea
                     type="text"
-                    style={{ width: "100%", height: "100px", resize: "none" }}
+                    style={{
+                      ...contactSuggestions,
+                      height: "100px",
+                      resize: "none",
+                    }}
                   />
                 </label>
                 <br />
