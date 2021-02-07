@@ -1353,13 +1353,17 @@ const Home = ({ state, actions }) => {
             </p>
           </div>
         </section>
+
+        {/* DESKTOP BOTTOM INFO AND CONTACT > 789 */}
         <section
+          className="BottomInfoContact"
           style={{
             display: "flex",
             justifyContent: "space-between",
             backgroundColor: "white",
           }}
         >
+          {/* COMMERCIAL ELECTRICAL SERVICES */}
           <div
             style={{
               width: "65%",
@@ -1395,6 +1399,8 @@ const Home = ({ state, actions }) => {
               </p>
             </div>
           </div>
+
+          {/* CONTACT FORM */}
           <div style={{ width: "35%", padding: "10px" }}>
             <div
               style={{
@@ -1468,6 +1474,112 @@ const Home = ({ state, actions }) => {
             </div>
           </div>
         </section>
+
+        {/* MOBILE CONTACT AND INFO < 789 */}
+        <section
+          className="MobileBottomInfoContact"
+          style={{
+            display: "none",
+            backgroundColor: "white",
+          }}
+        >
+          {/* MOBILE COMMERCIAL ELECTRICAL SERVICES */}
+          <div style={{ padding: 20 }}>
+            <img
+              style={{ width: "100%", height: "275px" }}
+              src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
+              alt="Count on us for commercial electrical services"
+            />
+            <h1 style={{ color: "#1f40a3" }}>
+              COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES
+            </h1>
+            <p>
+              Do you own a business or commercial property in the Travis County
+              area? Pritchard Electric provides commercial electrical services
+              for:
+            </p>
+            <ul>
+              <li>Office buildings</li>
+              <li>Apartment complexes</li>
+              <li>Retail shops and warehouses</li>
+            </ul>
+            <p>
+              Keep business running smoothly. Contact Austin, TX's premier
+              commercial electrician today at 512-252-4699. We serve customers
+              throughout the surrounding areas. Remember to ask for a free
+              estimate on equipment upgrades or any other electrical service.
+            </p>
+          </div>
+
+          {/* MOBILE CONTACT FORM */}
+          <div style={{ padding: 20 }}>
+            <form>
+              <label>
+                <span>Name *</span>
+                <br />
+                <input type="text" style={{ ...contactInput }} />
+                <br />
+                <span style={{ fontSize: 12 }}>First</span>
+                <br />
+                <label>
+                  <input type="text" style={{ ...contactInput }} />
+                  <br />
+                  <span style={{ fontSize: 12 }}>Last</span>
+                </label>
+              </label>
+              <br />
+              <br />
+              <label>
+                <span>Phone *</span>
+                <br />
+                <input type="phone" style={{ ...contactInput }} />
+              </label>
+              <br />
+              <br />
+              <label>
+                <span>Email *</span>
+                <br />
+                <input type="email" style={{ ...contactInput }} />
+              </label>
+              <br />
+              <br />
+              <label>
+                <span>Message/Suggestions *</span>
+                <br />
+                <textarea
+                  type="text"
+                  style={{
+                    ...contactSuggestions,
+                    height: "100px",
+                    resize: "none",
+                  }}
+                />
+              </label>
+              <br />
+              <br />
+              <label>
+                <span>Security Check *</span>
+              </label>
+              <br />
+              <br />
+              <button
+                style={{
+                  padding: 10,
+                  border: "none",
+                  backgroundColor: "#f4bb36",
+                  color: "white",
+                  width: "100%",
+                  fontSize: 20,
+                  fontWeight: "light",
+                }}
+              >
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </section>
+
+        {/* BOTTOM LOGO */}
         <div style={{ padding: 25, display: "flex", justifyContent: "center" }}>
           <img
             style={{ width: 145, height: 60 }}

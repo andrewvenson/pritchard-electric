@@ -35,8 +35,16 @@ const Theme = ({ state }) => {
       <HeadContainer>
         <Header />
       </HeadContainer>
-      
-      <div style={{backgroundColor: "#1f40a3", display: "flex", justifyContent: "center", padding: "15px", boxShadow: "3px 4px 8px black"}}>
+
+      <div
+        style={{
+          backgroundColor: "#1f40a3",
+          display: "flex",
+          justifyContent: "center",
+          padding: "15px",
+          boxShadow: "3px 4px 8px black",
+        }}
+      >
         <Nav />
       </div>
 
@@ -89,6 +97,18 @@ const globalStyles = css`
     }
     .mobileView {
       display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 789px) {
+    .BottomInfoContact {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 789px) {
+    .MobileBottomInfoContact {
+      display: block !important;
     }
   }
 `;
