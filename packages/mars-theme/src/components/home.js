@@ -1264,7 +1264,9 @@ const Home = ({ state, actions }) => {
           </button>
         </section>
 
+        {/* DESKTOP VIEW */}
         <section
+          className="CallElectricianTime"
           style={{
             backgroundColor: "#1f40a3",
             width: "100%",
@@ -1313,6 +1315,130 @@ const Home = ({ state, actions }) => {
               width: "49%",
               paddingRight: 75,
               paddingLeft: 75,
+            }}
+          >
+            <img
+              src="http://pritchardelectric.net/files/2014/04/52Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t"
+              alt
+              width="100%"
+            />
+          </div>
+        </section>
+
+        {/* MOBILE VIEW */}
+        <section
+          className="MobileCallElectricianTime"
+          style={{
+            backgroundColor: "#1f40a3",
+            width: "100%",
+            height: "50vh",
+            display: "none",
+            color: "white",
+            paddingTop: 25,
+            paddingBottom: 25,
+          }}
+        >
+          <div
+            style={{
+              height: "100%",
+              width: "49%",
+              paddingLeft: 25,
+              paddingRight: 25,
+            }}
+          >
+            <h1 style={{ margin: 0 }}>
+              IT'S TIME TO CALL YOUR ELECTRICIAN IF YOU NOTICE THESE SIGNS
+            </h1>
+            <div style={{ fontSize: 14 }}>
+              <p>
+                Avoid that nightmare completely. Call an electrician from
+                Pritchard Electric right away if you notice:
+              </p>
+
+              <ul>
+                <li>Discolored or malfunctioning outlets</li>
+                <li>Lights that flicker or buzz</li>
+                <li>Frequently tripped circuit breakers</li>
+              </ul>
+
+              <p>
+                We provide a wide range of{" "}
+                <u>
+                  <a href="">residential electrical services</a>
+                </u>{" "}
+                in Austin, Texas and the surrounding area.
+              </p>
+            </div>
+          </div>
+          <div style={{ height: "100%", border: "2px solid white" }}></div>
+
+          <div
+            style={{
+              height: "100%",
+              width: "49%",
+              paddingRight: 25,
+              paddingLeft: 25,
+            }}
+          >
+            <img
+              src="http://pritchardelectric.net/files/2014/04/52Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t"
+              alt
+              width="100%"
+            />
+          </div>
+        </section>
+
+        {/* MOBILE VIEW < 556 */}
+        <section
+          className="Mobile556CallElectricianTime"
+          style={{
+            backgroundColor: "#1f40a3",
+            width: "100%",
+            display: "none",
+            color: "white",
+            flexDirection: "column",
+            paddingTop: 25,
+            paddingBottom: 25,
+          }}
+        >
+          <div
+            style={{
+              // height: "100%",
+              // width: "100%",
+              paddingLeft: 25,
+              paddingRight: 25,
+            }}
+          >
+            <h1 style={{ margin: 0 }}>
+              IT'S TIME TO CALL YOUR ELECTRICIAN IF YOU NOTICE THESE SIGNS
+            </h1>
+            <div style={{ fontSize: 14 }}>
+              <p>
+                Avoid that nightmare completely. Call an electrician from
+                Pritchard Electric right away if you notice:
+              </p>
+
+              <ul>
+                <li>Discolored or malfunctioning outlets</li>
+                <li>Lights that flicker or buzz</li>
+                <li>Frequently tripped circuit breakers</li>
+              </ul>
+
+              <p>
+                We provide a wide range of{" "}
+                <u>
+                  <a href="">residential electrical services</a>
+                </u>{" "}
+                in Austin, Texas and the surrounding area.
+              </p>
+            </div>
+          </div>
+          {/* <div style={{ height: "100%", border: "2px solid white" }}></div> */}
+
+          <div
+            style={{
+              paddingRight: 25,
+              paddingLeft: 25,
             }}
           >
             <img
@@ -1515,7 +1641,9 @@ const Home = ({ state, actions }) => {
           <div style={{ padding: 20 }}>
             <form>
               <label>
-                <span>Name *</span>
+                <span>
+                  Name <span style={{ color: "red" }}>*</span>
+                </span>
                 <br />
                 <input type="text" style={{ ...contactInput }} />
                 <br />
@@ -1530,21 +1658,27 @@ const Home = ({ state, actions }) => {
               <br />
               <br />
               <label>
-                <span>Phone *</span>
+                <span>
+                  Phone <span style={{ color: "red" }}>*</span>
+                </span>
                 <br />
                 <input type="phone" style={{ ...contactInput }} />
               </label>
               <br />
               <br />
               <label>
-                <span>Email *</span>
+                <span>
+                  Email <span style={{ color: "red" }}>*</span>
+                </span>
                 <br />
                 <input type="email" style={{ ...contactInput }} />
               </label>
               <br />
               <br />
               <label>
-                <span>Message/Suggestions *</span>
+                <span>
+                  Message/Suggestions <span style={{ color: "red" }}>*</span>
+                </span>
                 <br />
                 <textarea
                   type="text"
@@ -1558,7 +1692,9 @@ const Home = ({ state, actions }) => {
               <br />
               <br />
               <label>
-                <span>Security Check *</span>
+                <span>
+                  Security Check <span style={{ color: "red" }}>*</span>
+                </span>
               </label>
               <br />
               <br />

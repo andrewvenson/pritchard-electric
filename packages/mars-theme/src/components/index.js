@@ -111,6 +111,33 @@ const globalStyles = css`
       display: block !important;
     }
   }
+
+  @media screen and (max-width: 1075px) {
+    .CallElectricianTime {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 1075px) {
+    .MobileCallElectricianTime {
+      display: flex !important;
+    }
+  }
+
+  @media screen and (max-width: 556px) {
+    .CallElectricianTime {
+      display: none !important;
+    }
+    .MobileCallElectricianTime {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 556px) {
+    .Mobile556CallElectricianTime {
+      display: flex !important;
+    }
+  }
 `;
 
 const HeadContainer = styled.div`
