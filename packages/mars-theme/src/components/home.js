@@ -1459,6 +1459,7 @@ const Home = ({ state, actions }) => {
             style={{
               textAlign: "center",
               paddingBottom: "45px",
+              color: "gray",
             }}
           >
             <h1 style={{ color: "#1f40a3" }}>
@@ -1498,7 +1499,7 @@ const Home = ({ state, actions }) => {
               justifyContent: "flex-end",
             }}
           >
-            <div style={{ maxWidth: "653px" }}>
+            <div style={{ maxWidth: "653px", color: "gray" }}>
               <img
                 style={{ width: "100%", maxWidth: "652px", height: "275px" }}
                 src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
