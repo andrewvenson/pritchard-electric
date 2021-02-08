@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { styled, connect, Global, decode } from "frontity";
+import Footer from "./footer";
 
 const Home = ({ state, actions }) => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const Home = ({ state, actions }) => {
   };
 
   const mobile560Width = {
-    width: "100vw",
+    width: "100%",
     height: "110vw",
   };
 
@@ -1537,7 +1538,9 @@ const Home = ({ state, actions }) => {
             >
               <form style={{ width: "300px" }}>
                 <label>
-                  <span>Name *</span>
+                  <span>
+                    Name <span style={{ color: "red" }}>*</span>
+                  </span>
                   <br />
                   <input type="text" style={{ ...contactInput }} />
                   <br />
@@ -1552,21 +1555,27 @@ const Home = ({ state, actions }) => {
                 <br />
                 <br />
                 <label>
-                  <span>Phone *</span>
+                  <span>
+                    Phone <span style={{ color: "red" }}>*</span>
+                  </span>
                   <br />
                   <input type="phone" style={{ ...contactInput }} />
                 </label>
                 <br />
                 <br />
                 <label>
-                  <span>Email *</span>
+                  <span>
+                    Email <span style={{ color: "red" }}>*</span>
+                  </span>
                   <br />
                   <input type="email" style={{ ...contactInput }} />
                 </label>
                 <br />
                 <br />
                 <label>
-                  <span>Message/Suggestions *</span>
+                  <span>
+                    Message/Suggestions <span style={{ color: "red" }}>*</span>
+                  </span>
                   <br />
                   <textarea
                     type="text"
@@ -1580,7 +1589,9 @@ const Home = ({ state, actions }) => {
                 <br />
                 <br />
                 <label>
-                  <span>Security Check *</span>
+                  <span>
+                    Security Check <span style={{ color: "red" }}>*</span>
+                  </span>
                 </label>
                 <br />
                 <br />
@@ -1608,10 +1619,11 @@ const Home = ({ state, actions }) => {
           style={{
             display: "none",
             backgroundColor: "white",
+            padding: "15px",
           }}
         >
           {/* MOBILE COMMERCIAL ELECTRICAL SERVICES */}
-          <div style={{ padding: 20 }}>
+          <div style={{ color: "gray" }}>
             <img
               style={{ width: "100%", height: "275px" }}
               src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
@@ -1639,90 +1651,92 @@ const Home = ({ state, actions }) => {
           </div>
 
           {/* MOBILE CONTACT FORM */}
-          <div style={{ padding: 20 }}>
-            <form>
+          <form>
+            <label>
+              <span>
+                Name <span style={{ color: "red" }}>*</span>
+              </span>
+              <br />
+              <input type="text" style={{ ...contactInput }} />
+              <br />
+              <span style={{ fontSize: 12 }}>First</span>
+              <br />
               <label>
-                <span>
-                  Name <span style={{ color: "red" }}>*</span>
-                </span>
-                <br />
                 <input type="text" style={{ ...contactInput }} />
                 <br />
-                <span style={{ fontSize: 12 }}>First</span>
-                <br />
-                <label>
-                  <input type="text" style={{ ...contactInput }} />
-                  <br />
-                  <span style={{ fontSize: 12 }}>Last</span>
-                </label>
+                <span style={{ fontSize: 12 }}>Last</span>
               </label>
+            </label>
+            <br />
+            <br />
+            <label>
+              <span>
+                Phone <span style={{ color: "red" }}>*</span>
+              </span>
               <br />
+              <input type="phone" style={{ ...contactInput }} />
+            </label>
+            <br />
+            <br />
+            <label>
+              <span>
+                Email <span style={{ color: "red" }}>*</span>
+              </span>
               <br />
-              <label>
-                <span>
-                  Phone <span style={{ color: "red" }}>*</span>
-                </span>
-                <br />
-                <input type="phone" style={{ ...contactInput }} />
-              </label>
+              <input type="email" style={{ ...contactInput }} />
+            </label>
+            <br />
+            <br />
+            <label>
+              <span>
+                Message/Suggestions <span style={{ color: "red" }}>*</span>
+              </span>
               <br />
-              <br />
-              <label>
-                <span>
-                  Email <span style={{ color: "red" }}>*</span>
-                </span>
-                <br />
-                <input type="email" style={{ ...contactInput }} />
-              </label>
-              <br />
-              <br />
-              <label>
-                <span>
-                  Message/Suggestions <span style={{ color: "red" }}>*</span>
-                </span>
-                <br />
-                <textarea
-                  type="text"
-                  style={{
-                    ...contactSuggestions,
-                    height: "100px",
-                    resize: "none",
-                  }}
-                />
-              </label>
-              <br />
-              <br />
-              <label>
-                <span>
-                  Security Check <span style={{ color: "red" }}>*</span>
-                </span>
-              </label>
-              <br />
-              <br />
-              <button
+              <textarea
+                type="text"
                 style={{
-                  padding: 10,
-                  border: "none",
-                  backgroundColor: "#f4bb36",
-                  color: "white",
-                  width: "100%",
-                  fontSize: 20,
-                  fontWeight: "light",
+                  ...contactSuggestions,
+                  height: "100px",
+                  resize: "none",
                 }}
-              >
-                SUBMIT
-              </button>
-            </form>
-          </div>
+              />
+            </label>
+            <br />
+            <br />
+            <label>
+              <span>
+                Security Check <span style={{ color: "red" }}>*</span>
+              </span>
+            </label>
+            <br />
+            <br />
+            <button
+              style={{
+                padding: 10,
+                border: "none",
+                backgroundColor: "#f4bb36",
+                color: "white",
+                width: "100%",
+                fontSize: 20,
+                fontWeight: "light",
+              }}
+            >
+              SUBMIT
+            </button>
+          </form>
         </section>
 
         {/* BOTTOM LOGO */}
-        <div style={{ padding: 25, display: "flex", justifyContent: "center" }}>
+        <div
+          style={{ padding: "10px", display: "flex", justifyContent: "center" }}
+        >
           <img
             style={{ width: 145, height: 60 }}
             src="http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n-1.png"
           />
         </div>
+
+        <Footer />
       </div>
     );
   }

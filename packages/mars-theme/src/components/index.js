@@ -137,6 +137,18 @@ const globalStyles = css`
     .Mobile556CallElectricianTime {
       display: flex !important;
     }
+
+    @media screen and (max-width: 545px) {
+      .desktopFooter {
+        display: none !important;
+      }
+    }
+
+    @media screen and (max-width: 545px) {
+      .mobileFooter {
+        display: block !important;
+      }
+    }
   }
 `;
 
