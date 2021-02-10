@@ -72,7 +72,7 @@ const Home = ({ state, actions }) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            boxShadow: "inset 0 8px 8px -6px black",
+            boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
           }}
         >
           <h1
@@ -1624,7 +1624,7 @@ const Home = ({ state, actions }) => {
           }}
         >
           {/* MOBILE COMMERCIAL ELECTRICAL SERVICES */}
-          <div style={{ color: "gray" }}>
+          <div style={{ color: "gray", fontSize: 14 }}>
             <img
               style={{ width: "100%", height: "275px" }}
               src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"

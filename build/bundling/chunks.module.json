@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "029df7ee2482d4fc6d52",
+  "hash": "e4292bb350d82168eccb",
   "publicPath": "/static/",
   "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "pritchard-electric": [
       "pritchard-electric.module.js",
-      "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js"
+      "pritchard-electric.3d4f729f75ffa8c0a1d1.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "39f02fd82638a6b4fe51.hot-update.json",
+      "name": "3d4f729f75ffa8c0a1d1.hot-update.json",
       "size": 60,
       "chunks": [],
       "chunkNames": [],
@@ -22,6 +22,14 @@
         "hotModuleReplacement": true,
         "immutable": true
       },
+      "emitted": false
+    },
+    {
+      "name": "images/add.png",
+      "size": 2511,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
       "emitted": false
     },
     {
@@ -57,6 +65,14 @@
       "emitted": false
     },
     {
+      "name": "images/list.png",
+      "size": 3472,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "images/mail.png",
       "size": 8210,
       "chunks": [],
@@ -77,8 +93,8 @@
       "emitted": false
     },
     {
-      "name": "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js",
-      "size": 178725,
+      "name": "pritchard-electric.3d4f729f75ffa8c0a1d1.hot-update.js",
+      "size": 41878,
       "chunks": [
         "pritchard-electric"
       ],
@@ -93,7 +109,7 @@
     },
     {
       "name": "pritchard-electric.module.js",
-      "size": 5497891,
+      "size": 5523532,
       "chunks": [
         "pritchard-electric"
       ],
@@ -112,7 +128,7 @@
       ],
       "assets": [
         "pritchard-electric.module.js",
-        "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js"
+        "pritchard-electric.3d4f729f75ffa8c0a1d1.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -125,7 +141,7 @@
       ],
       "assets": [
         "pritchard-electric.module.js",
-        "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js"
+        "pritchard-electric.3d4f729f75ffa8c0a1d1.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

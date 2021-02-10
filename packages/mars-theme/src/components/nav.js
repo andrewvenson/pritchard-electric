@@ -36,10 +36,6 @@ const NavContainer = styled.nav`
   padding: 0 24px;
   margin: 0;
   overflow-x: auto;
-
-  @media screen and (max-width: 560px) {
-    display: none;
-  }
 `;
 
 const NavItem = styled.div`
@@ -57,7 +53,7 @@ const NavItem = styled.div`
     border-bottom-color: transparent;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
-      border-bottom-color: #fff;
+      border-bottom-color: #f4bb36;
     }
   }
 
