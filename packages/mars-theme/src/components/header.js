@@ -1,5 +1,9 @@
 import React from "react";
 import { connect, styled } from "frontity";
+import BluePhone from "../static/images/bluecall.png";
+import Mail from "../static/images/mail.png";
+import Facebook from "../static/images/facebook-circular-logo.png";
+import Fax from "../static/images/fax.png";
 import Link from "./link";
 import MobileMenu from "./menu";
 
@@ -7,18 +11,69 @@ const Header = ({ state }) => {
   return (
     <>
       <Container>
-        <div style={{display: "flex", justifyContent: "space-between"}}>
-          <a href="tel:+1-512-252-4699" title="(512) 252-4699" style={{color: "navy", fontWeight: "bold"}}>(512) 252-4699</a>
-          <div style={{display: "flex", justifyContent: "center"}}>
-            <p style={{margin: 0}}>F</p>
-            <p style={{margin: 0}}>M</p>
-            <p style={{margin: 0}}>F</p>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <a
+            href="tel:+1-512-252-4699"
+            title="(512) 252-4699"
+            style={{
+              color: "#1f40a3",
+              display: "flex",
+              fontWeight: "500",
+              fontSize: "14px",
+            }}
+          >
+            <span style={{ marginRight: "5px" }}>
+              <img src={BluePhone} width="18px" height="18px" />
+            </span>
+            <span>(512) 252-4699</span>
+          </a>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <a
+              href="http://www.facebook.com/pages/category/Electrician/Pritchard-Electric-139403462895904/"
+              title="Facebook"
+              target="_blank"
+            >
+              <img
+                style={{ marginRight: "8px" }}
+                width="20px"
+                height="20px"
+                src={Facebook}
+              />
+            </a>
+            <a
+              href="mailto:?subject=Check out Pritchard Electric%2C LLC&amp;body=I thought you%27d be interested in this site%3A%0Ahttp%3A%2F%2Fpritchardelectric.net%2F"
+              title="Send to a Friend"
+              target="_blank"
+              class="email_icon"
+            >
+              <img
+                style={{ marginRight: "8px" }}
+                width="20px"
+                height="20px"
+                src={Mail}
+              />
+            </a>
+            <a
+              href="javascript:window.print()"
+              title="Print This Page"
+              class="print_icon"
+            >
+              <img width="20px" height="20px" src={Fax} />
+            </a>
           </div>
         </div>
         <StyledLink link="/">
-          <Title style={{justifyContent: "center", display: "flex", margin: "0px"}}><img src={"http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n.png"} style={{width: "325px", height: "125px"}}/></Title>
+          <Title
+            style={{ justifyContent: "center", display: "flex", margin: "0px" }}
+          >
+            <img
+              src={
+                "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n.png"
+              }
+              style={{ width: "325px", height: "125px" }}
+            />
+          </Title>
         </StyledLink>
-        {/* <Description>{state.frontity.description}</Description> */}
         <MobileMenu />
       </Container>
     </>
@@ -29,11 +84,11 @@ const Header = ({ state }) => {
 export default connect(Header);
 
 const Container = styled.div`
-  width: 848px;
+  width: 1000px;
   max-width: 100%;
   box-sizing: border-box;
   display: flex;
-  padding-top: 15px;
+  padding: 15px 10px 0px 10px;
   flex-direction: column;
   justify-content: space-around;
 `;

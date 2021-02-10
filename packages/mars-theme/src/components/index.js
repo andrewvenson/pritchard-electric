@@ -1,5 +1,6 @@
 import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
+import YellowPhone from "../static/images/call.png";
 import Switch from "@frontity/components/switch";
 import Header from "./header";
 import List from "./list";
@@ -42,10 +43,39 @@ const Theme = ({ state }) => {
           display: "flex",
           justifyContent: "center",
           padding: "15px",
-          boxShadow: "3px 4px 8px black",
         }}
+        className="desktopNav"
       >
         <Nav />
+      </div>
+
+      <div
+        style={{
+          backgroundColor: "white",
+          display: "none",
+          justifyContent: "center",
+          padding: "15px",
+          boxShadow: "inset 0 8px 8px -6px lightgray",
+          borderBottom: "1px solid lightgray",
+          color: "#f4bb36",
+        }}
+        className="mobileNav"
+      >
+        <a
+          href="tel:+1-512-252-4699"
+          title="(512) 252-4699"
+          style={{
+            color: "#f4bb36",
+            display: "flex",
+            fontWeight: "500",
+            fontSize: "14px",
+          }}
+        >
+          <span style={{ marginRight: "5px" }}>
+            <img src={YellowPhone} width="18px" height="18px" />
+          </span>
+          <span>(512) 252-4699</span>
+        </a>
       </div>
 
       {/* Add the main section. It renders a different component depending
@@ -104,11 +134,18 @@ const globalStyles = css`
     .BottomInfoContact {
       display: none !important;
     }
+
+    .desktopNav {
+      display: none !important;
+    }
   }
 
   @media screen and (max-width: 789px) {
     .MobileBottomInfoContact {
       display: block !important;
+    }
+    .mobileNav {
+      display: flex !important;
     }
   }
 

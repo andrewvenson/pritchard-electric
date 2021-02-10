@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "2b6b78b74c2614dada20",
+  "hash": "029df7ee2482d4fc6d52",
   "publicPath": "/static/",
   "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "pritchard-electric": [
       "pritchard-electric.module.js",
-      "pritchard-electric.cc378b9eb63430aa9373.hot-update.js"
+      "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "cc378b9eb63430aa9373.hot-update.json",
+      "name": "39f02fd82638a6b4fe51.hot-update.json",
       "size": 60,
       "chunks": [],
       "chunkNames": [],
@@ -22,6 +22,46 @@
         "hotModuleReplacement": true,
         "immutable": true
       },
+      "emitted": false
+    },
+    {
+      "name": "images/bluecall.png",
+      "size": 3985,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/call.png",
+      "size": 3985,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/facebook-circular-logo.png",
+      "size": 4374,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/fax.png",
+      "size": 2652,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/mail.png",
+      "size": 8210,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
       "emitted": false
     },
     {
@@ -37,8 +77,8 @@
       "emitted": false
     },
     {
-      "name": "pritchard-electric.cc378b9eb63430aa9373.hot-update.js",
-      "size": 178564,
+      "name": "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js",
+      "size": 178725,
       "chunks": [
         "pritchard-electric"
       ],
@@ -53,7 +93,7 @@
     },
     {
       "name": "pritchard-electric.module.js",
-      "size": 5470163,
+      "size": 5497891,
       "chunks": [
         "pritchard-electric"
       ],
@@ -72,7 +112,7 @@
       ],
       "assets": [
         "pritchard-electric.module.js",
-        "pritchard-electric.cc378b9eb63430aa9373.hot-update.js"
+        "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -85,7 +125,7 @@
       ],
       "assets": [
         "pritchard-electric.module.js",
-        "pritchard-electric.cc378b9eb63430aa9373.hot-update.js"
+        "pritchard-electric.39f02fd82638a6b4fe51.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

@@ -72,6 +72,7 @@ const Home = ({ state, actions }) => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            boxShadow: "inset 0 8px 8px -6px black",
           }}
         >
           <h1
