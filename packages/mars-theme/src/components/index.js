@@ -147,6 +147,10 @@ const globalStyles = css`
     .desktopTelephone {
       display: none !important;
     }
+
+    .desktopWorkspaceText {
+      display: none !important;
+    }
   }
 
   @media screen and (max-width: 789px) {
@@ -164,16 +168,26 @@ const globalStyles = css`
     .mobileMenu {
       display: block !important;
     }
+
+    .mobileWorkspaceText {
+      display: block !important;
+    }
   }
 
   @media screen and (max-width: 1075px) {
     .CallElectricianTime {
       display: none !important;
     }
+    .desktopWorkspace {
+      display: none !important;
+    }
   }
 
   @media screen and (max-width: 1075px) {
     .MobileCallElectricianTime {
+      display: flex !important;
+    }
+    .mobileWorkspace {
       display: flex !important;
     }
   }
