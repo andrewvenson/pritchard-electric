@@ -17,7 +17,8 @@ function Gallery({ state, actions }) {
 
   const IMAGES = [
     {
-      src: "http://pritchardelectric.net/gallery/",
+      src:
+        "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n_1_.jpg",
       thumbnail:
         "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n_1_.jpg?w=316&h=237&a=t",
       thumbnailWidth: 400,
@@ -26,28 +27,49 @@ function Gallery({ state, actions }) {
     {
       src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
       thumbnail:
-        "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+        "http://pritchardelectric.net/files/2019/01/11219309_498625093640404_8661194484712942164_n.jpg?w=316&h=237&a=t",
       thumbnailWidth: 400,
       thumbnailHeight: 212,
     },
     {
       src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
       thumbnail:
-        "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+        "http://pritchardelectric.net/files/2019/01/11223579_490264237809823_7210810231468267911_o.jpg?w=316&h=237&a=t",
       thumbnailWidth: 400,
       thumbnailHeight: 212,
     },
     {
       src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
       thumbnail:
-        "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+        "http://pritchardelectric.net/files/2019/01/11226912_533966266772953_2451784909899282063_n.jpg?w=316&h=237&a=t",
       thumbnailWidth: 400,
       thumbnailHeight: 212,
     },
     {
       src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
       thumbnail:
-        "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
+        "http://pritchardelectric.net/files/2019/01/11780048_520027718166808_8148905086326766674_o.jpg?w=316&h=237&a=t",
+      thumbnailWidth: 400,
+      thumbnailHeight: 212,
+    },
+    {
+      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+      thumbnail:
+        "http://pritchardelectric.net/files/2019/01/11870665_498624920307088_2661147460171180406_n.jpg?w=316&h=237&a=t",
+      thumbnailWidth: 400,
+      thumbnailHeight: 212,
+    },
+    {
+      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+      thumbnail:
+        "http://pritchardelectric.net/files/2019/01/12309723_533963856773194_6494885025188887892_o.jpg?w=316&h=237&a=t",
+      thumbnailWidth: 400,
+      thumbnailHeight: 212,
+    },
+    {
+      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+      thumbnail:
+        "http://pritchardelectric.net/files/2019/01/12374815_533962513439995_1319413800049393160_o.jpg?w=316&h=237&a=t",
       thumbnailWidth: 400,
       thumbnailHeight: 212,
     },
