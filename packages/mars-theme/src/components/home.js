@@ -4,7 +4,7 @@ import Footer from "./footer";
 
 const Home = ({ state, actions }) => {
   useEffect(() => {
-    actions.source.fetch("/home-post/");
+    actions.source.fetch("/home-post", { force: true });
   }, []);
 
   const data = state.source.get("/home-post/");
@@ -58,6 +58,7 @@ const Home = ({ state, actions }) => {
     return (
       <div style={{ width: "100%", height: "100vh" }}>
         {/* Regular width */}
+
         <section
           className="desktopWorkspace"
           style={{
@@ -66,7 +67,7 @@ const Home = ({ state, actions }) => {
             textAlign: "center",
             justifyContent: "center",
             alignItems: "center",
-            minHeight: 600,
+            minHeight: "500px",
             backgroundImage:
               "url('http://pritchardelectric.net/files/2014/04/12Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t')",
             backgroundAttachment: "fixed",
@@ -74,7 +75,7 @@ const Home = ({ state, actions }) => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
-            padding: "0px 40px 0px 40px",
+            padding: "0px 40px 40px 40px",
           }}
         >
           <h1
@@ -107,10 +108,11 @@ const Home = ({ state, actions }) => {
               fontWeight: "light",
             }}
           >
-            CONTACT US >
+            CONTACT US {`>`}
           </button>
         </section>
-        {/* MOBILE WORKSPACE SECIOTN */}
+
+        {/* MOBILE WORKSPACE SECTIOIN */}
         <section
           className="mobileWorkspace"
           style={{
@@ -126,7 +128,7 @@ const Home = ({ state, actions }) => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
-            padding: "0px 40px 0px 40px",
+            padding: "0px 40px 40px 40px",
           }}
         >
           {/* DESKTOP WORKSPACE TEXT */}
@@ -159,9 +161,10 @@ const Home = ({ state, actions }) => {
                 fontWeight: "light",
               }}
             >
-              CONTACT US >
+              CONTACT US {`>`}
             </button>
           </div>
+
           {/* MOBILE WORKSPACE TEXT */}
           <div className="mobileWorkspaceText" style={{ display: "none" }}>
             <h1
@@ -194,10 +197,11 @@ const Home = ({ state, actions }) => {
                 fontWeight: "light",
               }}
             >
-              CONTACT US >
+              CONTACT US {`>`}
             </button>
           </div>
         </section>
+
         {/* Service Sections */}
         <section class="desktopView" style={{ width: "100%", display: "flex" }}>
           {/* Electrical Panel Upgrades */}
@@ -1318,7 +1322,9 @@ const Home = ({ state, actions }) => {
           </div>
         </section>
 
+        {/* BRING YOUR LIGHT INTO THE 21ST CENTURY */}
         <section
+          className="desktopWorkspace"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -1358,8 +1364,98 @@ const Home = ({ state, actions }) => {
               fontWeight: "light",
             }}
           >
-            CONTACT US >
+            CONTACT US {`>`}
           </button>
+        </section>
+
+        {/* MOBILE WORKSPACE SECTIOIN */}
+        <section
+          className="mobileWorkspace"
+          style={{
+            display: "none",
+            flexDirection: "column",
+            textAlign: "center",
+            justifyContent: "center",
+            alignItems: "center",
+            minHeight: "50vw",
+            background:
+              "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered.jpg?&a=t'), rgba(0, 0, 0, 0.8)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
+            padding: "0px 40px 40px 40px",
+          }}
+        >
+          {/* DESKTOP WORKSPACE TEXT */}
+          <div className="desktopWorkspaceText">
+            <h1
+              style={{
+                color: "white",
+                fontSize: "40px",
+                textShadow: "3px 4px 5px black",
+                textTransform: "uppercase",
+              }}
+            >
+              BRING YOUR LIGHT INTO THE 21ST CENTURY
+            </h1>
+            <p
+              style={{
+                color: "white",
+                textShadow: "3px 4px 5px black",
+              }}
+            >
+              OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
+            </p>
+            <button
+              style={{
+                padding: 10,
+                border: "none",
+                backgroundColor: "#f4bb36",
+                color: "white",
+                fontSize: "18px",
+                fontWeight: "light",
+              }}
+            >
+              CONTACT US {`>`}
+            </button>
+          </div>
+
+          {/* MOBILE WORKSPACE TEXT */}
+          <div className="mobileWorkspaceText" style={{ display: "none" }}>
+            <h1
+              style={{
+                color: "white",
+                fontSize: "28px",
+                margin: 0,
+                textShadow: "3px 4px 5px black",
+                textTransform: "uppercase",
+              }}
+            >
+              BRING YOUR LIGHT INTO THE 21ST CENTURY
+            </h1>
+            <p
+              style={{
+                color: "white",
+                textShadow: "3px 4px 5px black",
+                fontSize: "14px",
+              }}
+            >
+              OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
+            </p>
+            <button
+              style={{
+                padding: 10,
+                border: "none",
+                backgroundColor: "#f4bb36",
+                color: "white",
+                fontSize: "15px",
+                fontWeight: "light",
+              }}
+            >
+              CONTACT US {`>`}
+            </button>
+          </div>
         </section>
 
         {/* DESKTOP VIEW */}

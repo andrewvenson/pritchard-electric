@@ -9,7 +9,7 @@ import Fax from "../static/images/fax.png";
 import Link from "./link";
 import MobileMenu from "./menu";
 
-const Header = ({ state }) => {
+const Header = ({ state, sidenav, setSideNav }) => {
   const Container2 = styled.div`
     width: 1000px;
     max-width: 100%;
@@ -51,7 +51,15 @@ const Header = ({ state }) => {
             <span>(512) 252-4699</span>
           </a>
           <a className="mobileMenu" style={{ display: "none" }}>
-            <img src={Menu} width="20px" height="20px" />
+            <img
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setSideNav(!sidenav);
+              }}
+              src={Menu}
+              width="20px"
+              height="20px"
+            />
           </a>
           <div
             className="desktopSocials"
@@ -108,7 +116,15 @@ const Header = ({ state }) => {
       <Container2 className="mobileHeader">
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <a>
-            <img src={Menu} width="20px" height="20px" />
+            <img
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setSideNav(!sidenav);
+              }}
+              src={Menu}
+              width="20px"
+              height="20px"
+            />
           </a>
           <StyledLink link="/">
             <Title
