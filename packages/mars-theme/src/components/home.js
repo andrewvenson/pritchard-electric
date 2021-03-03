@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { styled, connect, Global, decode } from "frontity";
 import Footer from "./footer";
 import ContactForm from "./contactform";
+import Link from "./link";
 
 const Home = ({ state, actions }) => {
   useEffect(() => {
@@ -99,7 +100,7 @@ const Home = ({ state, actions }) => {
             GET A SAFETY INSPECTION FROM A COMMERCIAL ELECTRICIAN IN AUSTIN,TX.
             PROUDLY SERVICING THE SURROUNDING AREAS.
           </p>
-          <button
+          <Link
             style={{
               padding: 10,
               border: "none",
@@ -108,12 +109,13 @@ const Home = ({ state, actions }) => {
               fontSize: 20,
               fontWeight: "light",
             }}
+            link="/contact"
           >
             CONTACT US ›
-          </button>
+          </Link>
         </section>
 
-        {/* MOBILE WORKSPACE SECTIOIN */}
+        {/* MOBILE WORKSPACE SECTION */}
         <section
           className="mobileWorkspace"
           style={{
@@ -152,7 +154,7 @@ const Home = ({ state, actions }) => {
               GET A SAFETY INSPECTION FROM A COMMERCIAL ELECTRICIAN IN
               AUSTIN,TX. PROUDLY SERVICING THE SURROUNDING AREAS.
             </p>
-            <button
+            <Link
               style={{
                 padding: 10,
                 border: "none",
@@ -161,9 +163,10 @@ const Home = ({ state, actions }) => {
                 fontSize: "18px",
                 fontWeight: "light",
               }}
+              link="/contact"
             >
               CONTACT US ›
-            </button>
+            </Link>
           </div>
 
           {/* MOBILE WORKSPACE TEXT */}
@@ -188,7 +191,7 @@ const Home = ({ state, actions }) => {
               GET A SAFETY INSPECTION FROM A COMMERCIAL ELECTRICIAN IN
               AUSTIN,TX. PROUDLY SERVICING THE SURROUNDING AREAS.
             </p>
-            <button
+            <Link
               style={{
                 padding: 10,
                 border: "none",
@@ -197,9 +200,10 @@ const Home = ({ state, actions }) => {
                 fontSize: "15px",
                 fontWeight: "light",
               }}
+              link="/contact"
             >
               CONTACT US ›
-            </button>
+            </Link>
           </div>
         </section>
 
@@ -1356,7 +1360,7 @@ const Home = ({ state, actions }) => {
           <p style={{ color: "white", textShadow: "3px 4px 5px black" }}>
             OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
           </p>
-          <button
+          <Link
             style={{
               padding: 10,
               border: "none",
@@ -1365,9 +1369,10 @@ const Home = ({ state, actions }) => {
               fontSize: 20,
               fontWeight: "light",
             }}
+            link="/contact"
           >
             CONTACT US ›
-          </button>
+          </Link>
         </section>
 
         {/* MOBILE WORKSPACE SECTIOIN */}
@@ -1409,7 +1414,7 @@ const Home = ({ state, actions }) => {
             >
               OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
             </p>
-            <button
+            <Link
               style={{
                 padding: 10,
                 border: "none",
@@ -1418,9 +1423,10 @@ const Home = ({ state, actions }) => {
                 fontSize: "18px",
                 fontWeight: "light",
               }}
+              link="/contact"
             >
               CONTACT US ›
-            </button>
+            </Link>
           </div>
 
           {/* MOBILE WORKSPACE TEXT */}
@@ -1445,7 +1451,7 @@ const Home = ({ state, actions }) => {
             >
               OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
             </p>
-            <button
+            <Link
               style={{
                 padding: 10,
                 border: "none",
@@ -1454,9 +1460,10 @@ const Home = ({ state, actions }) => {
                 fontSize: "15px",
                 fontWeight: "light",
               }}
+              link="/contact"
             >
               CONTACT US ›
-            </button>
+            </Link>
           </div>
         </section>
 

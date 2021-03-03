@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Link from "./link";
+
 function SideNav(props) {
   return (
     <div
@@ -34,35 +36,85 @@ function SideNav(props) {
         </div>
       </div>
       <div style={{ marginBottom: 10 }}>
-        <a href="/">HOME</a>
+        <Link
+          link="/"
+          onClick={() => {
+            props.setSideNav(!props.sidenav);
+          }}
+        >
+          HOME
+        </Link>
       </div>
       <div style={{ marginBottom: 10 }}>
-        <div style={{ marginBottom: 10 }}>
-          <a>SERVICES ›</a>
-        </div>
+        <div style={{ marginBottom: 10 }}>SERVICES ›</div>
         <div style={{ paddingLeft: 25 }}>
           <div style={{ marginBottom: 10 }}>
-            <a>RESIDENTIAL ELECTRICAL SERVICES</a>
+            <Link
+              onClick={() => {
+                props.setSideNav(!props.sidenav);
+              }}
+            >
+              RESIDENTIAL ELECTRICAL SERVICES
+            </Link>
           </div>
           <div style={{ marginBottom: 10 }}>
-            <a>ELECTRICAL PANEL UPGRADES</a>
+            <Link
+              onClick={() => {
+                props.setSideNav(!props.sidenav);
+              }}
+            >
+              ELECTRICAL PANEL UPGRADES
+            </Link>
           </div>
           <div style={{ marginBottom: 10 }}>
-            <a>COMMERCIAL ELECTRICAL SERVICES</a>
+            <Link
+              onClick={() => {
+                props.setSideNav(!props.sidenav);
+              }}
+            >
+              COMMERCIAL ELECTRICAL SERVICES
+            </Link>
           </div>
           <div style={{ marginBottom: 10 }}>
-            <a>LIGHTING SERVICES</a>
+            <Link
+              onClick={() => {
+                props.setSideNav(!props.sidenav);
+              }}
+            >
+              LIGHTING SERVICES
+            </Link>
           </div>
         </div>
       </div>
       <div style={{ marginBottom: 10 }}>
-        <a href="/gallery">Gallery</a>
+        <Link
+          onClick={() => {
+            props.setSideNav(!props.sidenav);
+          }}
+          link="/gallery"
+        >
+          GALLERY
+        </Link>
       </div>
       <div style={{ marginBottom: 10 }}>
-        <a href="/faq">FAQ</a>
+        <Link
+          onClick={() => {
+            props.setSideNav(!props.sidenav);
+          }}
+          link="/faq"
+        >
+          FAQ
+        </Link>
       </div>
       <div style={{ marginBottom: 10 }}>
-        <a href="/contact">CONTACT</a>
+        <Link
+          onClick={() => {
+            props.setSideNav(!props.sidenav);
+          }}
+          link="/contact"
+        >
+          CONTACT
+        </Link>
       </div>
     </div>
   );

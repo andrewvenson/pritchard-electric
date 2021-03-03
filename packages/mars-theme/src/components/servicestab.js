@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { styled, connect, Global, decode } from "frontity";
+import Link from "./link";
 
 function ServicesTab() {
   const [dropdown, showDropdown] = useState(false);
@@ -32,16 +32,16 @@ function ServicesTab() {
           display: dropdown ? "block" : "none",
         }}
       >
-        <a href="#">RESIDENTIAL ELECTRICAL SERVICES</a>
+        <Link href="#">RESIDENTIAL ELECTRICAL SERVICES</Link>
         <br />
         <br />
-        <a href="#">ELECTRICAL PANEL UPGRADES</a>
+        <Link href="#">ELECTRICAL PANEL UPGRADES</Link>
         <br />
         <br />
-        <a href="#">COMMERCIAL ELECTRICAL SERVICES</a>
+        <Link href="#">COMMERCIAL ELECTRICAL SERVICES</Link>
         <br />
         <br />
-        <a href="#">LIGHTING SERVICES</a>
+        <Link href="#">LIGHTING SERVICES</Link>
         <br />
         <br />
       </div>
