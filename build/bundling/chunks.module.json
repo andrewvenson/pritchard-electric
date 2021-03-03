@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "6972ab4efb87356421ed",
+  "hash": "b418024ba0569973ad69",
   "publicPath": "/static/",
   "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "pritchard-electric": [
       "pritchard-electric.module.js",
-      "pritchard-electric.370507ce019e97e8f3b2.hot-update.js"
+      "pritchard-electric.10b8f9ef0b2229ed1db8.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "370507ce019e97e8f3b2.hot-update.json",
+      "name": "10b8f9ef0b2229ed1db8.hot-update.json",
       "size": 60,
       "chunks": [],
       "chunkNames": [],
@@ -93,8 +93,8 @@
       "emitted": false
     },
     {
-      "name": "pritchard-electric.370507ce019e97e8f3b2.hot-update.js",
-      "size": 63117,
+      "name": "pritchard-electric.10b8f9ef0b2229ed1db8.hot-update.js",
+      "size": 187462,
       "chunks": [
         "pritchard-electric"
       ],
@@ -109,7 +109,7 @@
     },
     {
       "name": "pritchard-electric.module.js",
-      "size": 5591190,
+      "size": 5598066,
       "chunks": [
         "pritchard-electric"
       ],
@@ -128,7 +128,7 @@
       ],
       "assets": [
         "pritchard-electric.module.js",
-        "pritchard-electric.370507ce019e97e8f3b2.hot-update.js"
+        "pritchard-electric.10b8f9ef0b2229ed1db8.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -141,7 +141,7 @@
       ],
       "assets": [
         "pritchard-electric.module.js",
-        "pritchard-electric.370507ce019e97e8f3b2.hot-update.js"
+        "pritchard-electric.10b8f9ef0b2229ed1db8.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

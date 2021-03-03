@@ -13,7 +13,12 @@ const Faq = ({ state, actions }) => {
   //     const category = state.source.post[data.id];
   //     const firstHeader = category.content.rendered;
 
-  return <h1>FAQ</h1>;
+  return (
+    <main style={{ width: "100%" }}>
+      <h1>FAQ</h1>
+      <Footer />
+    </main>
+  );
 };
 
 // Connect the Item to gain access to `state` as a prop

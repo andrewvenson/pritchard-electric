@@ -3,6 +3,15 @@ import React from "react";
 function Footer() {
   return (
     <>
+      {/* BOTTOM LOGO */}
+      <div
+        style={{ padding: "10px", display: "flex", justifyContent: "center" }}
+      >
+        <img
+          style={{ width: 145, height: 60 }}
+          src="http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n-1.png"
+        />
+      </div>
       <div
         className="desktopFooter"
         style={{

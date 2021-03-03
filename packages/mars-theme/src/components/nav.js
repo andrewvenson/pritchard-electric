@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
+import ServicesTab from "./servicestab";
 
 /**
  * Navigation Component
@@ -19,47 +20,7 @@ const Nav = ({ state }) => {
           <NavItem key={name}>
             {/* If link url is the current page, add `aria-current` for a11y */}
             {link === "/services/" ? (
-              <>
-                <a
-                  onMouseEnter={() => {
-                    showDropdown(true);
-                  }}
-                  onMouseLeave={() => {
-                    showDropdown(false);
-                  }}
-                >
-                  SERVICES ›
-                </a>
-                <div
-                  onMouseOver={() => {
-                    showDropdown(true);
-                  }}
-                  onMouseLeave={() => {
-                    showDropdown(false);
-                  }}
-                  style={{
-                    padding: 10,
-                    borderRadius: "3px",
-                    width: 150,
-                    position: "absolute",
-                    backgroundColor: "#1f40a3",
-                    display: dropdown ? "block" : "none",
-                  }}
-                >
-                  <a href="#">Residential Electrical Services</a>
-                  <br />
-                  <br />
-                  <a href="#">Electrical Panel Upgrades</a>
-                  <br />
-                  <br />
-                  <a href="#">Commercial Electrical Services</a>
-                  <br />
-                  <br />
-                  <a href="#">Lighting Services</a>
-                  <br />
-                  <br />
-                </div>
-              </>
+              <ServicesTab />
             ) : (
               <Link
                 link={link}

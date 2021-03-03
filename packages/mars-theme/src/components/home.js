@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { styled, connect, Global, decode } from "frontity";
 import Footer from "./footer";
+import ContactForm from "./contactform";
 
 const Home = ({ state, actions }) => {
   useEffect(() => {
@@ -56,7 +57,7 @@ const Home = ({ state, actions }) => {
     const firstHeader = category.content.rendered;
 
     return (
-      <div style={{ width: "100%", height: "100vh" }}>
+      <main style={{ width: "100%", height: "100vh" }}>
         {/* Regular width */}
 
         <section
@@ -108,7 +109,7 @@ const Home = ({ state, actions }) => {
               fontWeight: "light",
             }}
           >
-            CONTACT US {`>`}
+            CONTACT US ›
           </button>
         </section>
 
@@ -161,7 +162,7 @@ const Home = ({ state, actions }) => {
                 fontWeight: "light",
               }}
             >
-              CONTACT US {`>`}
+              CONTACT US ›
             </button>
           </div>
 
@@ -197,7 +198,7 @@ const Home = ({ state, actions }) => {
                 fontWeight: "light",
               }}
             >
-              CONTACT US {`>`}
+              CONTACT US ›
             </button>
           </div>
         </section>
@@ -1364,7 +1365,7 @@ const Home = ({ state, actions }) => {
               fontWeight: "light",
             }}
           >
-            CONTACT US {`>`}
+            CONTACT US ›
           </button>
         </section>
 
@@ -1417,7 +1418,7 @@ const Home = ({ state, actions }) => {
                 fontWeight: "light",
               }}
             >
-              CONTACT US {`>`}
+              CONTACT US ›
             </button>
           </div>
 
@@ -1453,7 +1454,7 @@ const Home = ({ state, actions }) => {
                 fontWeight: "light",
               }}
             >
-              CONTACT US {`>`}
+              CONTACT US ›
             </button>
           </div>
         </section>
@@ -1851,93 +1852,11 @@ const Home = ({ state, actions }) => {
           </div>
 
           {/* MOBILE CONTACT FORM */}
-          <form>
-            <label>
-              <span>
-                Name <span style={{ color: "red" }}>*</span>
-              </span>
-              <br />
-              <input type="text" style={{ ...contactInput }} />
-              <br />
-              <span style={{ fontSize: 12 }}>First</span>
-              <br />
-              <label>
-                <input type="text" style={{ ...contactInput }} />
-                <br />
-                <span style={{ fontSize: 12 }}>Last</span>
-              </label>
-            </label>
-            <br />
-            <br />
-            <label>
-              <span>
-                Phone <span style={{ color: "red" }}>*</span>
-              </span>
-              <br />
-              <input type="phone" style={{ ...contactInput }} />
-            </label>
-            <br />
-            <br />
-            <label>
-              <span>
-                Email <span style={{ color: "red" }}>*</span>
-              </span>
-              <br />
-              <input type="email" style={{ ...contactInput }} />
-            </label>
-            <br />
-            <br />
-            <label>
-              <span>
-                Message/Suggestions <span style={{ color: "red" }}>*</span>
-              </span>
-              <br />
-              <textarea
-                type="text"
-                style={{
-                  ...contactSuggestions,
-                  height: "100px",
-                  resize: "none",
-                }}
-              />
-            </label>
-            <br />
-            <br />
-            <label>
-              <span>
-                Security Check <span style={{ color: "red" }}>*</span>
-              </span>
-            </label>
-            <br />
-            <br />
-            <button
-              style={{
-                padding: 10,
-                border: "none",
-                backgroundColor: "#f4bb36",
-                color: "white",
-                width: "100%",
-                fontSize: 20,
-                fontWeight: "light",
-              }}
-            >
-              SUBMIT
-            </button>
-          </form>
+          <ContactForm />
         </section>
 
-        {/* BOTTOM LOGO */}
-        <div
-          style={{ padding: "10px", display: "flex", justifyContent: "center" }}
-        >
-          <img
-            style={{ width: 145, height: 60 }}
-            src="http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n-1.png"
-          />
-        </div>
-
         <Footer />
-      </div>
+      </main>
     );
   }
   return null;

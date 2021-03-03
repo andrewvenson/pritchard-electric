@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Global, css, connect, styled, Head } from "frontity";
-import YellowPhone from "../static/images/call.png";
 import Switch from "@frontity/components/switch";
 import Header from "./header";
 import List from "./list";
@@ -13,6 +12,8 @@ import Gallery from "./gallery";
 import Title from "./title";
 import PageError from "./page-error";
 import Nav from "./nav";
+import SideNav from "./sidenav";
+import MobileNav from "./mobilenav";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -160,75 +161,13 @@ const Theme = ({ state }) => {
     <>
       {/* Add some metatags to the <head> of the HTML. */}
       <Title />
+
       <Head>
         <meta name="description" content={state.frontity.description} />
         <html lang="en" />
       </Head>
 
-      <div
-        className="sideNav"
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: 280,
-          height: "100vh",
-          backgroundColor: "#1f40a3",
-          zIndex: "999999",
-          display: sidenav ? "flex" : "none",
-          flexDirection: "column",
-          color: "white",
-          padding: 10,
-          fontStyle: "uppercase",
-        }}
-      >
-        <div style={{ position: "relative" }}>
-          <div
-            style={{
-              position: "absolute",
-              right: 10,
-              top: 0,
-              cursor: "pointer",
-            }}
-            onClick={() => {
-              setSideNav(!sidenav);
-            }}
-          >
-            X
-          </div>
-        </div>
-        <div style={{ marginBottom: 10 }}>
-          <a href="/">HOME</a>
-        </div>
-        <div style={{ marginBottom: 10 }}>
-          <div style={{ marginBottom: 10 }}>
-            <a>SERVICES ›</a>
-          </div>
-          <div style={{ paddingLeft: 25 }}>
-            <div style={{ marginBottom: 10 }}>
-              <a>RESIDENTIAL ELECTRICAL SERVICES</a>
-            </div>
-            <div style={{ marginBottom: 10 }}>
-              <a>ELECTRICAL PANEL UPGRADES</a>
-            </div>
-            <div style={{ marginBottom: 10 }}>
-              <a>COMMERCIAL ELECTRICAL SERVICES</a>
-            </div>
-            <div style={{ marginBottom: 10 }}>
-              <a>LIGHTING SERVICES</a>
-            </div>
-          </div>
-        </div>
-        <div style={{ marginBottom: 10 }}>
-          <a href="/gallery">Gallery</a>
-        </div>
-        <div style={{ marginBottom: 10 }}>
-          <a href="/faq">FAQ</a>
-        </div>
-        <div style={{ marginBottom: 10 }}>
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
+      <SideNav sidenav={sidenav} setSideNav={setSideNav} />
 
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
@@ -251,34 +190,7 @@ const Theme = ({ state }) => {
         <Nav />
       </div>
 
-      <div
-        style={{
-          backgroundColor: "white",
-          display: "none",
-          justifyContent: "center",
-          padding: "15px",
-          boxShadow: "inset 0 8px 8px -6px lightgray",
-          borderBottom: "1px solid lightgray",
-          color: "#f4bb36",
-        }}
-        className="mobileNav"
-      >
-        <a
-          href="tel:+1-512-252-4699"
-          title="(512) 252-4699"
-          style={{
-            color: "#f4bb36",
-            display: "flex",
-            fontWeight: "500",
-            fontSize: "14px",
-          }}
-        >
-          <span style={{ marginRight: "5px" }}>
-            <img src={YellowPhone} width="18px" height="18px" />
-          </span>
-          <span>(512) 252-4699</span>
-        </a>
-      </div>
+      <MobileNav />
 
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
