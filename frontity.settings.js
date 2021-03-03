@@ -14,10 +14,10 @@ const settings = {
         theme: {
           menu: [
             ["HOME", "/"],
-            // ["SERVICES", "/test"],
-            // ["GALLERY", "/gallery"],
-            // ["FAQ", "/faq"],
-            // ["CONTACT", "/contact"],
+            ["SERVICES", "/services/"],
+            ["GALLERY", "/gallery/"],
+            ["FAQ", "/faq/"],
+            ["CONTACT", "/contact/"],
           ],
           featured: {
             showOnList: false,

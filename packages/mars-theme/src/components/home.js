@@ -1647,6 +1647,8 @@ const Home = ({ state, actions }) => {
           style={{
             backgroundColor: "white",
             padding: "0px 45px 0px 45px",
+            display: "flex",
+            justifyContent: "center",
           }}
         >
           <div
@@ -1654,6 +1656,7 @@ const Home = ({ state, actions }) => {
               textAlign: "center",
               paddingBottom: "45px",
               color: "gray",
+              width: "980px",
             }}
           >
             <h1 style={{ color: "#1f40a3" }}>
@@ -1680,128 +1683,132 @@ const Home = ({ state, actions }) => {
           className="BottomInfoContact"
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "center",
             backgroundColor: "white",
           }}
         >
-          {/* COMMERCIAL ELECTRICAL SERVICES */}
-          <div
-            style={{
-              width: "65%",
-              display: "flex",
-              padding: "10px",
-              justifyContent: "flex-end",
-            }}
-          >
-            <div style={{ maxWidth: "653px", color: "gray" }}>
-              <img
-                style={{ width: "100%", maxWidth: "652px", height: "275px" }}
-                src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
-                alt="Count on us for commercial electrical services"
-              />
-              <h1 style={{ color: "#1f40a3" }}>
-                COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES
-              </h1>
-              <p>
-                Do you own a business or commercial property in the Travis
-                County area? Pritchard Electric provides commercial electrical
-                services for:
-              </p>
-              <ul>
-                <li>Office buildings</li>
-                <li>Apartment complexes</li>
-                <li>Retail shops and warehouses</li>
-              </ul>
-              <p>
-                Keep business running smoothly. Contact Austin, TX's premier
-                commercial electrician today at 512-252-4699. We serve customers
-                throughout the surrounding areas. Remember to ask for a free
-                estimate on equipment upgrades or any other electrical service.
-              </p>
-            </div>
-          </div>
-
-          {/* CONTACT FORM */}
-          <div style={{ width: "35%", padding: "10px" }}>
+          <div style={{ display: "flex" }}>
+            {/* COMMERCIAL ELECTRICAL SERVICES */}
             <div
               style={{
+                width: "65%",
                 display: "flex",
-                justifyContent: "flex-start",
+                padding: "10px",
+                justifyContent: "flex-end",
               }}
             >
-              <form style={{ width: "300px" }}>
-                <label>
-                  <span>
-                    Name <span style={{ color: "red" }}>*</span>
-                  </span>
-                  <br />
-                  <input type="text" style={{ ...contactInput }} />
-                  <br />
-                  <span style={{ fontSize: 12 }}>First</span>
-                  <br />
+              <div style={{ maxWidth: "653px", color: "gray" }}>
+                <img
+                  style={{ width: "100%", maxWidth: "652px", height: "275px" }}
+                  src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
+                  alt="Count on us for commercial electrical services"
+                />
+                <h1 style={{ color: "#1f40a3" }}>
+                  COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES
+                </h1>
+                <p>
+                  Do you own a business or commercial property in the Travis
+                  County area? Pritchard Electric provides commercial electrical
+                  services for:
+                </p>
+                <ul>
+                  <li>Office buildings</li>
+                  <li>Apartment complexes</li>
+                  <li>Retail shops and warehouses</li>
+                </ul>
+                <p>
+                  Keep business running smoothly. Contact Austin, TX's premier
+                  commercial electrician today at 512-252-4699. We serve
+                  customers throughout the surrounding areas. Remember to ask
+                  for a free estimate on equipment upgrades or any other
+                  electrical service.
+                </p>
+              </div>
+            </div>
+
+            {/* CONTACT FORM */}
+            <div style={{ width: "35%", padding: "10px" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-start",
+                }}
+              >
+                <form style={{ width: "300px" }}>
                   <label>
+                    <span>
+                      Name <span style={{ color: "red" }}>*</span>
+                    </span>
+                    <br />
                     <input type="text" style={{ ...contactInput }} />
                     <br />
-                    <span style={{ fontSize: 12 }}>Last</span>
+                    <span style={{ fontSize: 12 }}>First</span>
+                    <br />
+                    <label>
+                      <input type="text" style={{ ...contactInput }} />
+                      <br />
+                      <span style={{ fontSize: 12 }}>Last</span>
+                    </label>
                   </label>
-                </label>
-                <br />
-                <br />
-                <label>
-                  <span>
-                    Phone <span style={{ color: "red" }}>*</span>
-                  </span>
                   <br />
-                  <input type="phone" style={{ ...contactInput }} />
-                </label>
-                <br />
-                <br />
-                <label>
-                  <span>
-                    Email <span style={{ color: "red" }}>*</span>
-                  </span>
                   <br />
-                  <input type="email" style={{ ...contactInput }} />
-                </label>
-                <br />
-                <br />
-                <label>
-                  <span>
-                    Message/Suggestions <span style={{ color: "red" }}>*</span>
-                  </span>
+                  <label>
+                    <span>
+                      Phone <span style={{ color: "red" }}>*</span>
+                    </span>
+                    <br />
+                    <input type="phone" style={{ ...contactInput }} />
+                  </label>
                   <br />
-                  <textarea
-                    type="text"
+                  <br />
+                  <label>
+                    <span>
+                      Email <span style={{ color: "red" }}>*</span>
+                    </span>
+                    <br />
+                    <input type="email" style={{ ...contactInput }} />
+                  </label>
+                  <br />
+                  <br />
+                  <label>
+                    <span>
+                      Message/Suggestions{" "}
+                      <span style={{ color: "red" }}>*</span>
+                    </span>
+                    <br />
+                    <textarea
+                      type="text"
+                      style={{
+                        ...contactSuggestions,
+                        height: "100px",
+                        resize: "none",
+                      }}
+                    />
+                  </label>
+                  <br />
+                  <br />
+                  <label>
+                    <span>
+                      Security Check <span style={{ color: "red" }}>*</span>
+                    </span>
+                  </label>
+                  <br />
+                  <br />
+                  <button
                     style={{
-                      ...contactSuggestions,
-                      height: "100px",
-                      resize: "none",
+                      padding: 10,
+                      border: "none",
+                      backgroundColor: "#f4bb36",
+                      color: "white",
+                      width: "100%",
+                      fontSize: 20,
+                      fontWeight: "light",
                     }}
-                  />
-                </label>
-                <br />
-                <br />
-                <label>
-                  <span>
-                    Security Check <span style={{ color: "red" }}>*</span>
-                  </span>
-                </label>
-                <br />
-                <br />
-                <button
-                  style={{
-                    padding: 10,
-                    border: "none",
-                    backgroundColor: "#f4bb36",
-                    color: "white",
-                    width: "100%",
-                    fontSize: 20,
-                    fontWeight: "light",
-                  }}
-                >
-                  SUBMIT
-                </button>
-              </form>
+                  >
+                    SUBMIT
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </section>

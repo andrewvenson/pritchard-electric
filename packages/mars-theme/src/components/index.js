@@ -7,6 +7,9 @@ import List from "./list";
 import Post from "./post";
 import Loading from "./loading";
 import Home from "./home";
+import Contact from "./contact";
+import Faq from "./faq";
+import Gallery from "./gallery";
 import Title from "./title";
 import PageError from "./page-error";
 import Nav from "./nav";
@@ -286,6 +289,9 @@ const Theme = ({ state }) => {
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
           <Home when={data.isHome} />
+          <Contact when={data.isContact} />
+          <Faq when={data.isFaq} />
+          <Gallery when={data.isGallery} />
         </Switch>
       </Main>
     </>

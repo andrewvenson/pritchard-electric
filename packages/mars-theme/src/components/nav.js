@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
 
@@ -7,22 +7,73 @@ import Link from "./link";
  *
  * It renders the navigation links
  */
-const Nav = ({ state }) => (
-  <NavContainer>
-    {state.theme.menu.map(([name, link]) => {
-      // Check if the link matched the current page url
-      const isCurrentPage = state.router.link === link;
-      return (
-        <NavItem key={name}>
-          {/* If link url is the current page, add `aria-current` for a11y */}
-          <Link link={link} aria-current={isCurrentPage ? "page" : undefined}>
-            {name}
-          </Link>
-        </NavItem>
-      );
-    })}
-  </NavContainer>
-);
+const Nav = ({ state }) => {
+  const [dropdown, showDropdown] = useState(false);
+  return (
+    <NavContainer>
+      {state.theme.menu.map(([name, link]) => {
+        // Check if the link matched the current page url
+        const isCurrentPage = state.router.link === link;
+        //const isCurrentPage = true;
+        return (
+          <NavItem key={name}>
+            {/* If link url is the current page, add `aria-current` for a11y */}
+            {link === "/services/" ? (
+              <>
+                <a
+                  onMouseEnter={() => {
+                    showDropdown(true);
+                  }}
+                  onMouseLeave={() => {
+                    showDropdown(false);
+                  }}
+                >
+                  SERVICES ›
+                </a>
+                <div
+                  onMouseOver={() => {
+                    showDropdown(true);
+                  }}
+                  onMouseLeave={() => {
+                    showDropdown(false);
+                  }}
+                  style={{
+                    padding: 10,
+                    borderRadius: "3px",
+                    width: 150,
+                    position: "absolute",
+                    backgroundColor: "#1f40a3",
+                    display: dropdown ? "block" : "none",
+                  }}
+                >
+                  <a href="#">Residential Electrical Services</a>
+                  <br />
+                  <br />
+                  <a href="#">Electrical Panel Upgrades</a>
+                  <br />
+                  <br />
+                  <a href="#">Commercial Electrical Services</a>
+                  <br />
+                  <br />
+                  <a href="#">Lighting Services</a>
+                  <br />
+                  <br />
+                </div>
+              </>
+            ) : (
+              <Link
+                link={link}
+                aria-current={isCurrentPage ? "page" : undefined}
+              >
+                {name}
+              </Link>
+            )}
+          </NavItem>
+        );
+      })}
+    </NavContainer>
+  );
+};
 
 export default connect(Nav);
 
@@ -54,7 +105,17 @@ const NavItem = styled.div`
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
       border-bottom-color: #f4bb36;
+      color: #f4bb36;
     }
+  }
+
+  &:hover > a {
+    display: inline-block;
+    line-height: 2em;
+    border-bottom: 2px solid;
+    border-bottom-color: transparent;
+    border-bottom-color: #f4bb36;
+    color: #f4bb36;
   }
 
   &:first-of-type {

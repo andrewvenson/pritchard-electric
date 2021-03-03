@@ -3,13 +3,33 @@ import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import link from "@frontity/html2react/processors/link";
 
-
 const homeHandler = {
   pattern: "/",
   func: ({ state }) => {
     state.source.data["/"].isHome = true;
-  }
-}
+  },
+};
+
+const contactHandler = {
+  pattern: "/contact",
+  func: ({ state }) => {
+    state.source.data["/contact/"].isContact = true;
+  },
+};
+
+const faqHandler = {
+  pattern: "/faq",
+  func: ({ state }) => {
+    state.source.data["/faq/"].isFaq = true;
+  },
+};
+
+const galleryHandler = {
+  pattern: "/gallery",
+  func: ({ state }) => {
+    state.source.data["/gallery/"].isGallery = true;
+  },
+};
 
 const marsTheme = {
   name: "@frontity/mars-theme",
@@ -48,9 +68,12 @@ const marsTheme = {
       closeMobileMenu: ({ state }) => {
         state.theme.isMobileMenuOpen = false;
       },
-      init: ({libraries}) => {
-        libraries.source.handlers.push(homeHandler)
-      }
+      init: ({ libraries }) => {
+        libraries.source.handlers.push(homeHandler);
+        libraries.source.handlers.push(contactHandler);
+        libraries.source.handlers.push(faqHandler);
+        libraries.source.handlers.push(galleryHandler);
+      },
     },
   },
   libraries: {
