@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { styled, connect, Global, decode } from "frontity";
 
 function ServicesTab() {
   const [dropdown, showDropdown] = useState(false);
@@ -15,6 +16,7 @@ function ServicesTab() {
         SERVICES ›
       </a>
       <div
+        className="serviceTab"
         onMouseOver={() => {
           showDropdown(true);
         }}

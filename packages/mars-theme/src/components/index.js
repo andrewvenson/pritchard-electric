@@ -28,8 +28,9 @@ const Theme = ({ state }) => {
   const globalStyles = css`
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      //   "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Montserrat", sans-serif;
       overflow-y: ${sidenav ? "hidden" : "visible"};
     }
     a,
@@ -155,6 +156,10 @@ const Theme = ({ state }) => {
         display: flex !important;
       }
     }
+
+    .serviceTab a:hover {
+      color: #f4bb36;
+    }
   `;
 
   return (
@@ -165,6 +170,11 @@ const Theme = ({ state }) => {
       <Head>
         <meta name="description" content={state.frontity.description} />
         <html lang="en" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <SideNav sidenav={sidenav} setSideNav={setSideNav} />

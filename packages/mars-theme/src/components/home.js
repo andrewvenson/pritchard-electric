@@ -1332,6 +1332,7 @@ const Home = ({ state, actions }) => {
             textAlign: "center",
             justifyContent: "center",
             alignItems: "center",
+            padding: "0px 50px 0px 50px",
             minHeight: 600,
             backgroundImage:
               "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered.jpg?&a=t')",

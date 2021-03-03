@@ -19,12 +19,18 @@ const Contact = ({ state, actions }) => {
   };
 
   return (
-    <main style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+    <main
+      style={{
+        boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+      }}
+    >
       <article
         style={{
           display: "flex",
           justifyContent: "center",
-          boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
           padding: "0px 20px 0px 20px",
         }}
       >

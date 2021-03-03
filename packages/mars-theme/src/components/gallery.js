@@ -14,7 +14,13 @@ const Gallery = ({ state, actions }) => {
   //     const firstHeader = category.content.rendered;
 
   return (
-    <main style={{ width: "100%" }}>
+    <main
+      style={{
+        width: "100%",
+
+        boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
+      }}
+    >
       <h1>Gallery</h1>
       <Footer />
     </main>
