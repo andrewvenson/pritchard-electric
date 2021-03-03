@@ -198,35 +198,35 @@ const Theme = ({ state }) => {
           </div>
         </div>
         <div style={{ marginBottom: 10 }}>
-          <a>Home</a>
+          <a href="/">HOME</a>
         </div>
         <div style={{ marginBottom: 10 }}>
           <div style={{ marginBottom: 10 }}>
-            <a>Services {`>`}</a>
+            <a>SERVICES ›</a>
           </div>
           <div style={{ paddingLeft: 25 }}>
             <div style={{ marginBottom: 10 }}>
-              <a>Residential Electrical Services</a>
+              <a>RESIDENTIAL ELECTRICAL SERVICES</a>
             </div>
             <div style={{ marginBottom: 10 }}>
-              <a>Electrical Panel Upgrades</a>
+              <a>ELECTRICAL PANEL UPGRADES</a>
             </div>
             <div style={{ marginBottom: 10 }}>
-              <a>Commercial Electrical Services</a>
+              <a>COMMERCIAL ELECTRICAL SERVICES</a>
             </div>
             <div style={{ marginBottom: 10 }}>
-              <a>Lighting Services</a>
+              <a>LIGHTING SERVICES</a>
             </div>
           </div>
         </div>
         <div style={{ marginBottom: 10 }}>
-          <a>Gallery</a>
+          <a href="/gallery">Gallery</a>
         </div>
         <div style={{ marginBottom: 10 }}>
-          <a>FAQ</a>
+          <a href="/faq">FAQ</a>
         </div>
         <div style={{ marginBottom: 10 }}>
-          <a>Contact</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
 
