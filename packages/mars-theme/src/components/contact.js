@@ -90,6 +90,9 @@ const Contact = ({ state, actions }) => {
             installations. No job is too large or too unusual for our team to
             tackle.
           </p>
+          <p style={{ color: "gray" }}>
+            Please use the form on this page to email us.
+          </p>
         </div>
       </section>
 

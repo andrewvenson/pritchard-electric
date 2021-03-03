@@ -1,4 +1,5 @@
 import React from "react";
+import ServicesTab from "./servicestab";
 
 function ContactForm() {
   const contactInput = {
@@ -23,15 +24,18 @@ function ContactForm() {
           Name <span style={{ color: "red" }}>*</span>
         </span>
         <br />
-        <input type="text" style={{ ...contactInput }} />
-        <br />
-        <span style={{ fontSize: 12 }}>First</span>
-        <br />
-        <label>
-          <input type="text" style={{ ...contactInput }} />
-          <br />
-          <span style={{ fontSize: 12 }}>Last</span>
-        </label>
+
+        <div style={{ display: "flex" }}>
+          <label>
+            <input type="text" style={{ ...contactInput }} />
+            <span style={{ fontSize: 12 }}>First</span>
+          </label>
+
+          <label style={{ marginLeft: "15px" }}>
+            <input type="text" style={{ ...contactInput }} />
+            <span style={{ fontSize: 12 }}>Last</span>
+          </label>
+        </div>
       </label>
       <br />
       <br />
