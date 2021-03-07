@@ -185,6 +185,10 @@ const Theme = ({ state }) => {
     .serviceTab a:hover {
       color: #f4bb36;
     }
+
+    .sideNav div a:hover {
+      color: #f4bb36;
+    }
   `;
 
   return (
