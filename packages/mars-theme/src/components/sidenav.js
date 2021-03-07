@@ -53,6 +53,7 @@ function SideNav(props) {
               onClick={() => {
                 props.setSideNav(!props.sidenav);
               }}
+              link="/residential-electrical-services"
             >
               RESIDENTIAL ELECTRICAL SERVICES
             </Link>
@@ -62,6 +63,7 @@ function SideNav(props) {
               onClick={() => {
                 props.setSideNav(!props.sidenav);
               }}
+              link="electrical-panel-upgrades"
             >
               ELECTRICAL PANEL UPGRADES
             </Link>
@@ -71,6 +73,7 @@ function SideNav(props) {
               onClick={() => {
                 props.setSideNav(!props.sidenav);
               }}
+              link="/commercial-electrical-services"
             >
               COMMERCIAL ELECTRICAL SERVICES
             </Link>
@@ -80,6 +83,7 @@ function SideNav(props) {
               onClick={() => {
                 props.setSideNav(!props.sidenav);
               }}
+              link="/lighting-services"
             >
               LIGHTING SERVICES
             </Link>

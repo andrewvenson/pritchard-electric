@@ -14,6 +14,10 @@ import PageError from "./page-error";
 import Nav from "./nav";
 import SideNav from "./sidenav";
 import MobileNav from "./mobilenav";
+import Electrical from "./services/electrical-panel-upgrades";
+import Commercial from "./services/commercial-electrical-services";
+import Lighting from "./services/lighting-services";
+import Residential from "./services/residential-electrical-services";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -124,6 +128,27 @@ const Theme = ({ state }) => {
       }
     }
 
+    @media screen and (max-width: 777px) {
+      .servicesDesktopWidth {
+        display: none !important;
+      }
+    }
+
+    @media screen and (max-width: 777px) {
+      .services1060Width {
+        display: block !important;
+      }
+    }
+
+    @media screen and (max-width: 1075px) {
+      .MobileCallElectricianTime {
+        display: flex !important;
+      }
+      .mobileWorkspace {
+        display: flex !important;
+      }
+    }
+
     @media screen and (max-width: 556px) {
       .CallElectricianTime {
         display: none !important;
@@ -214,6 +239,10 @@ const Theme = ({ state }) => {
           <Contact when={data.isContact} />
           <Faq when={data.isFaq} />
           <Gallery when={data.isGallery} />
+          <Residential when={data.isResidential} />
+          <Commercial when={data.isCommercial} />
+          <Lighting when={data.isLighting} />
+          <Electrical when={data.isElectrical} />
         </Switch>
       </Main>
     </>

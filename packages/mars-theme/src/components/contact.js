@@ -54,13 +54,13 @@ const Contact = ({ state, actions }) => {
           <br />
           <strong>Hours</strong>
           <p style={margin0}>Service calls after hours can be done</p>
-          <p style={margin0}>Mon:8:00AM-5:00PM</p>
-          <p style={margin0}>Tue:8:00AM-5:00PM</p>
-          <p style={margin0}>Wed:8:00AM-5:00PM</p>
-          <p style={margin0}>Thu:8:00AM-5:00PM</p>
-          <p style={margin0}>Fri:8:00AM-5:00PM</p>
-          <p style={margin0}>Sat:Closed</p>
-          <p style={margin0}>Sun:Closed</p>
+          <p style={margin0}>Mon: 8:00AM-5:00PM</p>
+          <p style={margin0}>Tue: 8:00AM-5:00PM</p>
+          <p style={margin0}>Wed: 8:00AM-5:00PM</p>
+          <p style={margin0}>Thu: 8:00AM-5:00PM</p>
+          <p style={margin0}>Fri: 8:00AM-5:00PM</p>
+          <p style={margin0}>Sat: Closed</p>
+          <p style={margin0}>Sun: Closed</p>
         </div>
       </article>
 

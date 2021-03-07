@@ -32,16 +32,20 @@ function ServicesTab() {
           display: dropdown ? "block" : "none",
         }}
       >
-        <Link href="#">RESIDENTIAL ELECTRICAL SERVICES</Link>
+        <Link link="/residential-electrical-services">
+          RESIDENTIAL ELECTRICAL SERVICES
+        </Link>
         <br />
         <br />
-        <Link href="#">ELECTRICAL PANEL UPGRADES</Link>
+        <Link link="/electrical-panel-upgrades">ELECTRICAL PANEL UPGRADES</Link>
         <br />
         <br />
-        <Link href="#">COMMERCIAL ELECTRICAL SERVICES</Link>
+        <Link link="/commercial-electrical-services">
+          COMMERCIAL ELECTRICAL SERVICES
+        </Link>
         <br />
         <br />
-        <Link href="#">LIGHTING SERVICES</Link>
+        <Link link="/lighting-services">LIGHTING SERVICES</Link>
         <br />
         <br />
       </div>

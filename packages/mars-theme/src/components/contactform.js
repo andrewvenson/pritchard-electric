@@ -20,7 +20,7 @@ function ContactForm() {
   return (
     <form style={{ width: "100%" }}>
       <label>
-        <span>
+        <span style={{ color: "gray", fontWeight: "bold" }}>
           Name <span style={{ color: "red" }}>*</span>
         </span>
         <br />
@@ -28,19 +28,19 @@ function ContactForm() {
         <div style={{ display: "flex" }}>
           <label>
             <input type="text" style={{ ...contactInput }} />
-            <span style={{ fontSize: 12 }}>First</span>
+            <span style={{ fontSize: 12, color: "gray" }}>First</span>
           </label>
 
           <label style={{ marginLeft: "15px" }}>
             <input type="text" style={{ ...contactInput }} />
-            <span style={{ fontSize: 12 }}>Last</span>
+            <span style={{ fontSize: 12, color: "gray" }}>Last</span>
           </label>
         </div>
       </label>
       <br />
       <br />
       <label>
-        <span>
+        <span style={{ color: "gray", fontWeight: "bold" }}>
           Phone <span style={{ color: "red" }}>*</span>
         </span>
         <br />
@@ -49,7 +49,7 @@ function ContactForm() {
       <br />
       <br />
       <label>
-        <span>
+        <span style={{ color: "gray", fontWeight: "bold" }}>
           Email <span style={{ color: "red" }}>*</span>
         </span>
         <br />
@@ -58,7 +58,7 @@ function ContactForm() {
       <br />
       <br />
       <label>
-        <span>
+        <span style={{ color: "gray", fontWeight: "bold" }}>
           Message/Suggestions <span style={{ color: "red" }}>*</span>
         </span>
         <br />
@@ -74,7 +74,7 @@ function ContactForm() {
       <br />
       <br />
       <label>
-        <span>
+        <span style={{ color: "gray", fontWeight: "bold" }}>
           Security Check <span style={{ color: "red" }}>*</span>
         </span>
       </label>

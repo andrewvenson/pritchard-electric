@@ -285,8 +285,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/electrical-panel-upgrades"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -373,8 +373,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/residential-electrical-services"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -461,8 +461,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/commercial-electrical-services"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -549,8 +549,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/lighting-services"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -644,7 +644,7 @@ const Home = ({ state, actions }) => {
                     padding: 25,
                   }}
                 >
-                  <h1>ELETRICAL PANEL UPGRADES</h1>
+                  <h1>ELECTRICAL PANEL UPGRADES</h1>
                   <div
                     style={{ borderBottom: "1px solid white", width: "100%" }}
                   ></div>
@@ -654,8 +654,8 @@ const Home = ({ state, actions }) => {
                   </p>
                 </div>
               </div>
-              <a
-                href="https://www.google.com"
+              <Link
+                link="/electrical-panel-upgrades"
                 style={{
                   display: "inline-block",
                   width: "100%",
@@ -746,8 +746,8 @@ const Home = ({ state, actions }) => {
                   </p>
                 </div>
               </div>
-              <a
-                href="https://www.google.com"
+              <Link
+                link="/residential-electrical-services"
                 style={{
                   display: "inline-block",
                   width: "100%",
@@ -840,8 +840,8 @@ const Home = ({ state, actions }) => {
                   </p>
                 </div>
               </div>
-              <a
-                href="https://www.google.com"
+              <Link
+                link="/commercial-electrical-services"
                 style={{
                   display: "inline-block",
                   width: "100%",
@@ -932,8 +932,8 @@ const Home = ({ state, actions }) => {
                   </p>
                 </div>
               </div>
-              <a
-                href="https://www.google.com"
+              <Link
+                link="/lighting-services"
                 style={{
                   display: "inline-block",
                   width: "100%",
@@ -1037,8 +1037,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/electrical-panel-upgrades"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -1129,8 +1129,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/residential-electrical-services"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -1221,8 +1221,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/commercial-electrical-services"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -1313,8 +1313,8 @@ const Home = ({ state, actions }) => {
                 </p>
               </div>
             </div>
-            <a
-              href="https://www.google.com"
+            <Link
+              link="/lighting-services"
               style={{
                 display: "inline-block",
                 width: "100%",
@@ -1505,7 +1505,9 @@ const Home = ({ state, actions }) => {
             <p>
               We provide a wide range of{" "}
               <u>
-                <a href="">residential electrical services</a>
+                <Link link="/residential-electrical-services">
+                  residential electrical services
+                </Link>
               </u>{" "}
               in Austin, Texas and the surrounding area.
             </p>
@@ -1567,7 +1569,9 @@ const Home = ({ state, actions }) => {
               <p>
                 We provide a wide range of{" "}
                 <u>
-                  <a href="">residential electrical services</a>
+                  <Link link="/residential-electrical-services">
+                    residential electrical services
+                  </Link>
                 </u>{" "}
                 in Austin, Texas and the surrounding area.
               </p>
@@ -1630,7 +1634,9 @@ const Home = ({ state, actions }) => {
               <p>
                 We provide a wide range of{" "}
                 <u>
-                  <a href="">residential electrical services</a>
+                  <Link link="/residential-electrical-services">
+                    residential electrical services
+                  </Link>
                 </u>{" "}
                 in Austin, Texas and the surrounding area.
               </p>
@@ -1745,24 +1751,24 @@ const Home = ({ state, actions }) => {
               >
                 <form style={{ width: "300px" }}>
                   <label>
-                    <span>
+                    <span style={{ color: "gray", fontWeight: "bold" }}>
                       Name <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
                     <input type="text" style={{ ...contactInput }} />
                     <br />
-                    <span style={{ fontSize: 12 }}>First</span>
+                    <span style={{ fontSize: 12, color: "gray" }}>First</span>
                     <br />
                     <label>
                       <input type="text" style={{ ...contactInput }} />
                       <br />
-                      <span style={{ fontSize: 12 }}>Last</span>
+                      <span style={{ fontSize: 12, color: "gray" }}>Last</span>
                     </label>
                   </label>
                   <br />
                   <br />
                   <label>
-                    <span>
+                    <span style={{ color: "gray", fontWeight: "bold" }}>
                       Phone <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
@@ -1771,7 +1777,7 @@ const Home = ({ state, actions }) => {
                   <br />
                   <br />
                   <label>
-                    <span>
+                    <span style={{ color: "gray", fontWeight: "bold" }}>
                       Email <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
@@ -1780,7 +1786,7 @@ const Home = ({ state, actions }) => {
                   <br />
                   <br />
                   <label>
-                    <span>
+                    <span style={{ color: "gray", fontWeight: "bold" }}>
                       Message/Suggestions{" "}
                       <span style={{ color: "red" }}>*</span>
                     </span>
@@ -1797,7 +1803,7 @@ const Home = ({ state, actions }) => {
                   <br />
                   <br />
                   <label>
-                    <span>
+                    <span style={{ color: "gray", fontWeight: "bold" }}>
                       Security Check <span style={{ color: "red" }}>*</span>
                     </span>
                   </label>

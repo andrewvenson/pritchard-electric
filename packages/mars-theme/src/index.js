@@ -31,6 +31,34 @@ const galleryHandler = {
   },
 };
 
+const commercialHandler = {
+  pattern: "/commercial-electrical-services",
+  func: ({ state }) => {
+    state.source.data["/commercial-electrical-services/"].isCommercial = true;
+  },
+};
+
+const lightingHandler = {
+  pattern: "/lighting-services",
+  func: ({ state }) => {
+    state.source.data["/lighting-services/"].isLighting = true;
+  },
+};
+
+const residentialHandler = {
+  pattern: "/residential-electrical-services",
+  func: ({ state }) => {
+    state.source.data["/residential-electrical-services/"].isResidential = true;
+  },
+};
+
+const electricalHandler = {
+  pattern: "/electrical-panel-upgrades",
+  func: ({ state }) => {
+    state.source.data["/electrical-panel-upgrades/"].isElectrical = true;
+  },
+};
+
 const marsTheme = {
   name: "@frontity/mars-theme",
   roots: {
@@ -73,6 +101,10 @@ const marsTheme = {
         libraries.source.handlers.push(contactHandler);
         libraries.source.handlers.push(faqHandler);
         libraries.source.handlers.push(galleryHandler);
+        libraries.source.handlers.push(electricalHandler);
+        libraries.source.handlers.push(lightingHandler);
+        libraries.source.handlers.push(commercialHandler);
+        libraries.source.handlers.push(residentialHandler);
       },
     },
   },
