@@ -9,7 +9,13 @@ import Fax from "../static/images/fax.png";
 import Link from "./link";
 import MobileMenu from "./menu";
 
-const Header = ({ state, sidenav, setSideNav }) => {
+const Header = ({
+  state,
+  sidenav,
+  setSideNav,
+  socialmodal,
+  showSocialModal,
+}) => {
   const Container2 = styled.div`
     width: 1000px;
     max-width: 100%;
@@ -95,7 +101,13 @@ const Header = ({ state, sidenav, setSideNav }) => {
             </a>
           </div>
           <a className="mobileSocials" style={{ display: "none" }}>
-            <img width="20px" height="20px" src={More} />
+            <img
+              onClick={() => showSocialModal(!socialmodal)}
+              style={{ cursor: "pointer" }}
+              width="20px"
+              height="20px"
+              src={More}
+            />
           </a>
         </div>
         <StyledLink link="/">
@@ -143,7 +155,13 @@ const Header = ({ state, sidenav, setSideNav }) => {
             </Title>
           </StyledLink>
           <a>
-            <img width="20px" height="20px" src={More} />
+            <img
+              width="20px"
+              height="20px"
+              src={More}
+              style={{ cursor: "pointer" }}
+              onClick={() => showSocialModal(!socialmodal)}
+            />
           </a>
         </div>
       </Container2>

@@ -29,6 +29,7 @@ function ServicesTab() {
           width: 150,
           position: "absolute",
           backgroundColor: "#1f40a3",
+          zIndex: "10000",
           display: dropdown ? "block" : "none",
         }}
       >
