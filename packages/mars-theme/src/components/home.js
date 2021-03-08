@@ -71,7 +71,7 @@ const Home = ({ state, actions }) => {
             alignItems: "center",
             minHeight: "500px",
             backgroundImage:
-              "url('http://pritchardelectric.net/files/2014/04/12Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t')",
+              "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-belt.jpg')",
             backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
