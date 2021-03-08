@@ -74,7 +74,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
                   maxHeight: "370.11px",
                   width: "45vw",
                 }}
-                src="http://pritchardelectric.net/files/2019/01/62Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=1440&h=1080&a=t"
+                src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-panel.jpg"
               />
             </div>
           </div>
@@ -85,7 +85,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
                 style={{
                   width: "90vw",
                 }}
-                src="http://pritchardelectric.net/files/2019/01/62Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=1440&h=1080&a=t"
+                src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-panel.jpg"
               />
             </div>
             <div>

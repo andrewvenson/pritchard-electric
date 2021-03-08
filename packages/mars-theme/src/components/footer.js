@@ -9,7 +9,7 @@ function Footer() {
       >
         <img
           style={{ width: 145, height: 60 }}
-          src="http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n-1.png"
+          src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/logo.png"
         />
       </div>
       <div

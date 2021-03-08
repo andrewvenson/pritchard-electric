@@ -72,7 +72,7 @@ const Header = ({
             style={{ display: "flex", justifyContent: "center" }}
           >
             <a
-              href="http://www.facebook.com/pages/category/Electrician/Pritchard-Electric-139403462895904/"
+              href="https://www.facebook.com/pages/category/Electrician/Pritchard-Electric-139403462895904/"
               title="Facebook"
               target="_blank"
             >
@@ -116,7 +116,7 @@ const Header = ({
           >
             <img
               src={
-                "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n.png"
+                "https://manage.pritchardelectric.net/wp-content/uploads/2021/03/logo.png"
               }
               style={{ width: "325px", height: "125px" }}
             />
@@ -148,7 +148,7 @@ const Header = ({
             >
               <img
                 src={
-                  "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n.png"
+                  "https://manage.pritchardelectric.net/wp-content/uploads/2021/03/logo.png"
                 }
                 style={{ width: "77.41px", height: "35px" }}
               />

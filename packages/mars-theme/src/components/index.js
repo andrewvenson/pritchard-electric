@@ -293,7 +293,7 @@ const Theme = ({ state }) => {
                   }}
                 >
                   <a
-                    href="http://www.facebook.com/pages/category/Electrician/Pritchard-Electric-139403462895904/"
+                    href="https://www.facebook.com/pages/category/Electrician/Pritchard-Electric-139403462895904/"
                     title="Facebook"
                     target="_blank"
                   >
