@@ -47,7 +47,7 @@ function CommercialElectrical({ state, actions }) {
               <h3 style={{ color: "#1f40a3" }}>
                 SET UP COMMERCIAL SAFETY SERVICES IN AUSTIN, TX
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   Commercial properties use far more electricity than the
                   average home. Because your building is using high levels of
@@ -99,7 +99,7 @@ function CommercialElectrical({ state, actions }) {
               <h3 style={{ color: "#1f40a3" }}>
                 SET UP COMMERCIAL SAFETY SERVICES IN AUSTIN, TX
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   Commercial properties use far more electricity than the
                   average home. Because your building is using high levels of
@@ -124,7 +124,7 @@ function CommercialElectrical({ state, actions }) {
             <h3 style={{ color: "#1f40a3" }}>
               OFFERING COMMERCIAL ELECTRICAL SERVICES AND MAINTENANCE WORK
             </h3>
-            <div style={{ color: "gray" }}>
+            <div className="text" style={{ color: "gray" }}>
               <p>
                 Regular electrical maintenance is your key to operating a safe
                 commercial property that can keep up with ever-changing energy

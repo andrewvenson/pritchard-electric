@@ -175,6 +175,18 @@ const Theme = ({ state }) => {
       .desktopHeader {
         display: none !important;
       }
+      .service h1 {
+        font-size: 18px !important;
+      }
+      .service {
+        font-size: 18px !important;
+      }
+      .goto {
+        font-size: 13px !important;
+      }
+      .text p {
+        font-size: 12px;
+      }
     }
 
     @media screen and (max-width: 545px) {

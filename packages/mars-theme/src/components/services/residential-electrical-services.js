@@ -48,7 +48,7 @@ function ResidentialElectrical({ state, actions }) {
                 PRITCHARD ELECTRIC, LLC HANDLES ELECTRIC REPAIR WORK &
                 RESIDENTIAL ELECTRICAL SERVICES
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   A flickering or unreliable light is more than an annoyance.
                   It's usually the sign of bad or overburdened wiring. Pritchard
@@ -90,7 +90,7 @@ function ResidentialElectrical({ state, actions }) {
                 PRITCHARD ELECTRIC, LLC HANDLES ELECTRIC REPAIR WORK &
                 RESIDENTIAL ELECTRICAL SERVICES
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   A flickering or unreliable light is more than an annoyance.
                   It's usually the sign of bad or overburdened wiring. Pritchard
@@ -109,7 +109,7 @@ function ResidentialElectrical({ state, actions }) {
             <h3 style={{ color: "#1f40a3" }}>
               TALK TO AN ELECTRICAL INSTALLATION TECH ABOUT HOME UPGRADES
             </h3>
-            <div style={{ color: "gray" }}>
+            <div className="text" style={{ color: "gray" }}>
               <p>
                 Is your family using more electricity than your home can
                 provide? An electricity installation or upgrade could solve your

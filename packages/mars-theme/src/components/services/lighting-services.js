@@ -48,7 +48,7 @@ function Lighting({ state, actions }) {
                 DISCOVER THE POSSIBILITIES OF HOME AND LANDSCAPE LIGHTING
                 INSTALLATION SERVICES
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   Any electrical repair company can replace bulbs and ballasts.
                   Pritchard Electric, LLC of Austin, Texas offers comprehensive
@@ -95,7 +95,7 @@ function Lighting({ state, actions }) {
                 DISCOVER THE POSSIBILITIES OF HOME AND LANDSCAPE LIGHTING
                 INSTALLATION SERVICES
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   Any electrical repair company can replace bulbs and ballasts.
                   Pritchard Electric, LLC of Austin, Texas offers comprehensive
@@ -119,7 +119,7 @@ function Lighting({ state, actions }) {
             <h3 style={{ color: "#1f40a3" }}>
               START PLANNING A LIGHTING SERVICE UPGRADE
             </h3>
-            <div style={{ color: "gray" }}>
+            <div className="text" style={{ color: "gray" }}>
               <p>
                 One of the most effective ways to upgrade your home’s lighting
                 is through a lighting control system installation. This lighting

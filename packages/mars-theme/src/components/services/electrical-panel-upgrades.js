@@ -47,7 +47,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
               <h3 style={{ color: "#1f40a3" }}>
                 ASK ABOUT AN ELECTRICAL PANEL INSTALLATION IN AUSTIN, TX
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   As you update your home with new technology, remember to
                   update your home's electrical system. Today's homes use far
@@ -95,7 +95,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
               <h3 style={{ color: "#1f40a3" }}>
                 ASK ABOUT AN ELECTRICAL PANEL INSTALLATION IN AUSTIN, TX
               </h3>
-              <div style={{ color: "gray" }}>
+              <div className="text" style={{ color: "gray" }}>
                 <p>
                   As you update your home with new technology, remember to
                   update your home's electrical system. Today's homes use far
@@ -121,7 +121,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
             <h3 style={{ color: "#1f40a3" }}>
               WHY YOU SHOULD MAKE AN ELECTRICAL PANEL UPGRADE YOUR TOP PRIORITY
             </h3>
-            <div style={{ color: "gray" }}>
+            <div className="text" style={{ color: "gray" }}>
               <p>
                 An outdated electrical system isn't just an inconvenience. It's
                 a serious safety hazard. Overloaded wiring can cause:

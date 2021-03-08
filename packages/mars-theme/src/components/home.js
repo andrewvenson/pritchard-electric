@@ -275,7 +275,7 @@ const Home = ({ state, actions }) => {
                   padding: 25,
                 }}
               >
-                <h1>ELETRICAL PANEL UPGRADES</h1>
+                <h1>ELECTRICAL PANEL UPGRADES</h1>
                 <div
                   style={{ borderBottom: "1px solid white", width: "100%" }}
                 ></div>
@@ -1020,6 +1020,7 @@ const Home = ({ state, actions }) => {
               }}
             >
               <div
+                className="service"
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -1028,7 +1029,7 @@ const Home = ({ state, actions }) => {
                   padding: 25,
                 }}
               >
-                <h1>ELETRICAL PANEL UPGRADES</h1>
+                <h1>ELECTRICAL PANEL UPGRADES</h1>
                 <div
                   style={{ borderBottom: "1px solid white", width: "100%" }}
                 ></div>
@@ -1112,6 +1113,7 @@ const Home = ({ state, actions }) => {
               }}
             >
               <div
+                className="service"
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -1204,6 +1206,7 @@ const Home = ({ state, actions }) => {
               }}
             >
               <div
+                className="service"
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -1296,6 +1299,7 @@ const Home = ({ state, actions }) => {
               }}
             >
               <div
+                className="service"
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -1495,7 +1499,7 @@ const Home = ({ state, actions }) => {
               paddingRight: 75,
             }}
           >
-            <h1 style={{ margin: 0 }}>
+            <h1 className="service" style={{ margin: 0 }}>
               IT'S TIME TO CALL YOUR ELECTRICIAN IF YOU NOTICE THESE SIGNS
             </h1>
             <p>
@@ -1558,10 +1562,10 @@ const Home = ({ state, actions }) => {
               paddingRight: 25,
             }}
           >
-            <h1 style={{ margin: 0 }}>
+            <h1 className="service" style={{ margin: 0 }}>
               IT'S TIME TO CALL YOUR ELECTRICIAN IF YOU NOTICE THESE SIGNS
             </h1>
-            <div style={{ fontSize: 14 }}>
+            <div style={{ fontSize: 12 }}>
               <p>
                 Avoid that nightmare completely. Call an electrician from
                 Pritchard Electric right away if you notice:
@@ -1623,10 +1627,10 @@ const Home = ({ state, actions }) => {
               paddingRight: 25,
             }}
           >
-            <h1 style={{ margin: 0 }}>
+            <h1 className="service" style={{ margin: 0 }}>
               IT'S TIME TO CALL YOUR ELECTRICIAN IF YOU NOTICE THESE SIGNS
             </h1>
-            <div style={{ fontSize: 14 }}>
+            <div style={{ fontSize: 12 }}>
               <p>
                 Avoid that nightmare completely. Call an electrician from
                 Pritchard Electric right away if you notice:
@@ -1681,22 +1685,24 @@ const Home = ({ state, actions }) => {
               width: "980px",
             }}
           >
-            <h1 style={{ color: "#1f40a3" }}>
+            <h1 className="service" style={{ color: "#1f40a3" }}>
               PUT A LICENSED ELECTRICIAN IN YOUR CONTACT LIST
             </h1>
-            <h3 style={{ color: "#1f40a3" }}>
+            <h3 className="goto" style={{ color: "#1f40a3" }}>
               MAKE US YOUR SOURCE FOR ELECTRICAL SERVICES IN AUSTIN, TX
             </h3>
-            <p>
-              Need a few electrical repairs or upgrades done around the house?
-              You can call Pritchard Electric, LLC for electrical issues of all
-              kinds, including repairs, electrical panel upgrades, lighting
-              services and new wiring installations.
-            </p>
-            <p>
-              Trust your home or business to an electrician with over 10 years
-              of experience.
-            </p>
+            <div className="text">
+              <p>
+                Need a few electrical repairs or upgrades done around the house?
+                You can call Pritchard Electric, LLC for electrical issues of
+                all kinds, including repairs, electrical panel upgrades,
+                lighting services and new wiring installations.
+              </p>
+              <p>
+                Trust your home or business to an electrician with over 10 years
+                of experience.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -1728,23 +1734,25 @@ const Home = ({ state, actions }) => {
                 <h1 style={{ color: "#1f40a3" }}>
                   COUNT ON US FOR COMMERCIAL ELECTRICAL SERVICES
                 </h1>
-                <p>
-                  Do you own a business or commercial property in the Travis
-                  County area? Pritchard Electric provides commercial electrical
-                  services for:
-                </p>
-                <ul>
-                  <li>Office buildings</li>
-                  <li>Apartment complexes</li>
-                  <li>Retail shops and warehouses</li>
-                </ul>
-                <p>
-                  Keep business running smoothly. Contact Austin, TX's premier
-                  commercial electrician today at 512-252-4699. We serve
-                  customers throughout the surrounding areas. Remember to ask
-                  for a free estimate on equipment upgrades or any other
-                  electrical service.
-                </p>
+                <div className="text">
+                  <p>
+                    Do you own a business or commercial property in the Travis
+                    County area? Pritchard Electric provides commercial
+                    electrical services for:
+                  </p>
+                  <ul>
+                    <li>Office buildings</li>
+                    <li>Apartment complexes</li>
+                    <li>Retail shops and warehouses</li>
+                  </ul>
+                  <p>
+                    Keep business running smoothly. Contact Austin, TX's premier
+                    commercial electrician today at 512-252-4699. We serve
+                    customers throughout the surrounding areas. Remember to ask
+                    for a free estimate on equipment upgrades or any other
+                    electrical service.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -1845,7 +1853,7 @@ const Home = ({ state, actions }) => {
           }}
         >
           {/* MOBILE COMMERCIAL ELECTRICAL SERVICES */}
-          <div style={{ color: "gray", fontSize: 14 }}>
+          <div style={{ color: "gray", fontSize: 12 }}>
             <img
               style={{ width: "100%", height: "275px" }}
               src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-wall.jpg"

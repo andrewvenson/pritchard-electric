@@ -74,6 +74,7 @@ const Contact = ({ state, actions }) => {
           style={{ textAlign: "center", maxWidth: "980px", padding: "20px" }}
         >
           <h2
+            className="service"
             style={{
               margin: 0,
               color: "#1f40a3",
@@ -82,6 +83,7 @@ const Contact = ({ state, actions }) => {
             FIND AN ELECTRICIAN IN AUSTIN, TX
           </h2>
           <h3
+            className="goto"
             style={{
               margin: 0,
               color: "#1f40a3",
@@ -89,16 +91,18 @@ const Contact = ({ state, actions }) => {
           >
             MAKE US YOUR GO-TO ELECTRIC REPAIR COMPANY
           </h3>
-          <p style={{ color: "gray" }}>
-            Thank you for visiting our website. Pritchard Electric, LLC offers a
-            wide range of electrical services in the Austin, TX area. We handle
-            residential and commercial upgrades, retrofits, repairs and
-            installations. No job is too large or too unusual for our team to
-            tackle.
-          </p>
-          <p style={{ color: "gray" }}>
-            Please use the form on this page to email us.
-          </p>
+          <div className="text">
+            <p style={{ color: "gray" }}>
+              Thank you for visiting our website. Pritchard Electric, LLC offers
+              a wide range of electrical services in the Austin, TX area. We
+              handle residential and commercial upgrades, retrofits, repairs and
+              installations. No job is too large or too unusual for our team to
+              tackle.
+            </p>
+            <p style={{ color: "gray" }}>
+              Please use the form on this page to email us.
+            </p>
+          </div>
         </div>
       </section>
 
