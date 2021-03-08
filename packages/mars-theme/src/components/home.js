@@ -126,7 +126,7 @@ const Home = ({ state, actions }) => {
             alignItems: "center",
             minHeight: "50vw",
             background:
-              "url('http://pritchardelectric.net/files/2014/04/12Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t'), rgba(0, 0, 0, 0.8)",
+              "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-belt.jpg')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -251,7 +251,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/62Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-pole-work.jpg')",
               }}
             ></div>
             <div
@@ -297,6 +297,7 @@ const Home = ({ state, actions }) => {
               }}
             />
           </div>
+
           {/* Residential Electrical Services */}
           <div
             style={{ ...width, position: "relative", overflow: "hidden" }}
@@ -339,7 +340,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/32Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-man.jpg')",
               }}
             ></div>
             <div
@@ -427,7 +428,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-light.jpg')",
               }}
             ></div>
             <div
@@ -515,7 +516,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/42Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-crimp.jpg')",
               }}
             ></div>
             <div
@@ -620,7 +621,7 @@ const Home = ({ state, actions }) => {
                   top: 0,
                   zIndex: -5,
                   backgroundImage:
-                    "url('http://pritchardelectric.net/files/2014/04/62Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                    "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-pole-work.jpg')",
                 }}
               ></div>
               <div
@@ -712,7 +713,7 @@ const Home = ({ state, actions }) => {
                   top: 0,
                   zIndex: -5,
                   backgroundImage:
-                    "url('http://pritchardelectric.net/files/2014/04/32Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                    "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-man.jpg')",
                 }}
               ></div>
               <div
@@ -806,7 +807,7 @@ const Home = ({ state, actions }) => {
                   top: 0,
                   zIndex: -5,
                   backgroundImage:
-                    "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                    "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-light.jpg')",
                 }}
               ></div>
               <div
@@ -898,7 +899,7 @@ const Home = ({ state, actions }) => {
                   top: 0,
                   zIndex: -5,
                   backgroundImage:
-                    "url('http://pritchardelectric.net/files/2014/04/42Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                    "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-crimp.jpg')",
                 }}
               ></div>
               <div
@@ -1003,7 +1004,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/62Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-pole-work.jpg')",
               }}
             ></div>
             <div
@@ -1095,7 +1096,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/32Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-man.jpg')",
               }}
             ></div>
             <div
@@ -1187,7 +1188,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-light.jpg')",
               }}
             ></div>
             <div
@@ -1279,7 +1280,7 @@ const Home = ({ state, actions }) => {
                 top: 0,
                 zIndex: -5,
                 backgroundImage:
-                  "url('http://pritchardelectric.net/files/2014/04/42Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?w=316&h=421&a=t')",
+                  "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-crimp.jpg')",
               }}
             ></div>
             <div
@@ -1339,7 +1340,7 @@ const Home = ({ state, actions }) => {
             padding: "0px 50px 0px 50px",
             minHeight: 600,
             backgroundImage:
-              "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered.jpg?&a=t')",
+              "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/sidwalk-lights.jpg')",
             backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -1381,7 +1382,7 @@ const Home = ({ state, actions }) => {
           </Link>
         </section>
 
-        {/* MOBILE WORKSPACE SECTIOIN */}
+        {/* MOBILE WORKSPACE SECTION */}
         <section
           className="mobileWorkspace"
           style={{
@@ -1392,7 +1393,7 @@ const Home = ({ state, actions }) => {
             alignItems: "center",
             minHeight: "50vw",
             background:
-              "url('http://pritchardelectric.net/files/2014/04/2Untitled-6-Recovered-Recovered-Recovered-Recovered.jpg?&a=t'), rgba(0, 0, 0, 0.8)",
+              "url('https://manage.pritchardelectric.net/wp-content/uploads/2021/03/sidwalk-lights.jpg'), rgba(0, 0, 0, 0.8)",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -1529,7 +1530,7 @@ const Home = ({ state, actions }) => {
             }}
           >
             <img
-              src="http://pritchardelectric.net/files/2014/04/52Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t"
+              src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-testing.jpg"
               alt
               width="100%"
             />
@@ -1594,7 +1595,7 @@ const Home = ({ state, actions }) => {
             }}
           >
             <img
-              src="http://pritchardelectric.net/files/2014/04/52Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t"
+              src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-testing.jpg"
               alt
               width="100%"
             />
@@ -1657,7 +1658,7 @@ const Home = ({ state, actions }) => {
             }}
           >
             <img
-              src="http://pritchardelectric.net/files/2014/04/52Untitled-6-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered-Recovered.jpg?&a=t"
+              src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-testing.jpg"
               alt
               width="100%"
             />
@@ -1721,7 +1722,7 @@ const Home = ({ state, actions }) => {
               <div style={{ maxWidth: "653px", color: "gray" }}>
                 <img
                   style={{ width: "100%", maxWidth: "652px", height: "275px" }}
-                  src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
+                  src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-wall.jpg"
                   alt="Count on us for commercial electrical services"
                 />
                 <h1 style={{ color: "#1f40a3" }}>
@@ -1847,7 +1848,7 @@ const Home = ({ state, actions }) => {
           <div style={{ color: "gray", fontSize: 14 }}>
             <img
               style={{ width: "100%", height: "275px" }}
-              src="http://pritchardelectric.net/files/bigstock/2019/01/Electric-Job-In-The-Apartment-245991979.jpg?w=1440&h=598&a=t"
+              src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-wall.jpg"
               alt="Count on us for commercial electrical services"
             />
             <h1 style={{ color: "#1f40a3" }}>
