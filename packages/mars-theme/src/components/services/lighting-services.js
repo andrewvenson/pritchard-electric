@@ -37,6 +37,7 @@ function Lighting({ state, actions }) {
           >
             <div>
               <h1
+                className="service"
                 style={{
                   margin: "0px",
                   color: "#1f40a3",
@@ -44,7 +45,7 @@ function Lighting({ state, actions }) {
               >
                 ILLUMINATE YOUR AUSTIN, TX HOME
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 DISCOVER THE POSSIBILITIES OF HOME AND LANDSCAPE LIGHTING
                 INSTALLATION SERVICES
               </h3>
@@ -88,10 +89,13 @@ function Lighting({ state, actions }) {
               />
             </div>
             <div>
-              <h1 style={{ margin: "0px", color: "#1f40a3" }}>
+              <h1
+                className="service"
+                style={{ margin: "0px", color: "#1f40a3" }}
+              >
                 ILLUMINATE YOUR AUSTIN, TX HOME
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 DISCOVER THE POSSIBILITIES OF HOME AND LANDSCAPE LIGHTING
                 INSTALLATION SERVICES
               </h3>
@@ -116,7 +120,7 @@ function Lighting({ state, actions }) {
           </div>
 
           <div>
-            <h3 style={{ color: "#1f40a3" }}>
+            <h3 className="goto" style={{ color: "#1f40a3" }}>
               START PLANNING A LIGHTING SERVICE UPGRADE
             </h3>
             <div className="text" style={{ color: "gray" }}>

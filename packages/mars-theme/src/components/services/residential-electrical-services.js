@@ -37,6 +37,7 @@ function ResidentialElectrical({ state, actions }) {
           >
             <div>
               <h1
+                className="service"
                 style={{
                   margin: "0px",
                   color: "#1f40a3",
@@ -44,7 +45,7 @@ function ResidentialElectrical({ state, actions }) {
               >
                 NEED A LOCAL ELECTRICIAN IN AUSTIN, TX?
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 PRITCHARD ELECTRIC, LLC HANDLES ELECTRIC REPAIR WORK &
                 RESIDENTIAL ELECTRICAL SERVICES
               </h3>
@@ -83,10 +84,13 @@ function ResidentialElectrical({ state, actions }) {
               />
             </div>
             <div>
-              <h1 style={{ margin: "0px", color: "#1f40a3" }}>
+              <h1
+                className="service"
+                style={{ margin: "0px", color: "#1f40a3" }}
+              >
                 NEED A LOCAL ELECTRICIAN IN AUSTIN, TX?
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 PRITCHARD ELECTRIC, LLC HANDLES ELECTRIC REPAIR WORK &
                 RESIDENTIAL ELECTRICAL SERVICES
               </h3>
@@ -106,7 +110,7 @@ function ResidentialElectrical({ state, actions }) {
           </div>
 
           <div>
-            <h3 style={{ color: "#1f40a3" }}>
+            <h3 className="goto" style={{ color: "#1f40a3" }}>
               TALK TO AN ELECTRICAL INSTALLATION TECH ABOUT HOME UPGRADES
             </h3>
             <div className="text" style={{ color: "gray" }}>

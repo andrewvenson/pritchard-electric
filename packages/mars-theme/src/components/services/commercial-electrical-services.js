@@ -37,6 +37,7 @@ function CommercialElectrical({ state, actions }) {
           >
             <div>
               <h1
+                className="service"
                 style={{
                   margin: "0px",
                   color: "#1f40a3",
@@ -44,7 +45,7 @@ function CommercialElectrical({ state, actions }) {
               >
                 PROTECT YOUR ASSETS WITH AN ELECTRICAL SAFETY INSPECTION
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 SET UP COMMERCIAL SAFETY SERVICES IN AUSTIN, TX
               </h3>
               <div className="text" style={{ color: "gray" }}>
@@ -89,6 +90,7 @@ function CommercialElectrical({ state, actions }) {
             </div>
             <div>
               <h1
+                className="service"
                 style={{
                   margin: "0px",
                   color: "#1f40a3",
@@ -96,7 +98,7 @@ function CommercialElectrical({ state, actions }) {
               >
                 PROTECT YOUR ASSETS WITH AN ELECTRICAL SAFETY INSPECTION
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 SET UP COMMERCIAL SAFETY SERVICES IN AUSTIN, TX
               </h3>
               <div className="text" style={{ color: "gray" }}>
@@ -121,7 +123,7 @@ function CommercialElectrical({ state, actions }) {
           </div>
 
           <div>
-            <h3 style={{ color: "#1f40a3" }}>
+            <h3 className="goto" style={{ color: "#1f40a3" }}>
               OFFERING COMMERCIAL ELECTRICAL SERVICES AND MAINTENANCE WORK
             </h3>
             <div className="text" style={{ color: "gray" }}>

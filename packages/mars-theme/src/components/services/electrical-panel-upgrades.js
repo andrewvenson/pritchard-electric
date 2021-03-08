@@ -37,6 +37,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
           >
             <div>
               <h1
+                className="service"
                 style={{
                   margin: "0px",
                   color: "#1f40a3",
@@ -44,7 +45,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
               >
                 NEED MORE POWER? REACH OUT TO A LOCAL ELECTRICIAN.
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 ASK ABOUT AN ELECTRICAL PANEL INSTALLATION IN AUSTIN, TX
               </h3>
               <div className="text" style={{ color: "gray" }}>
@@ -89,10 +90,13 @@ function ElectricalPanelUpgrades({ state, actions }) {
               />
             </div>
             <div>
-              <h1 style={{ margin: "0px", color: "#1f40a3" }}>
+              <h1
+                className="service"
+                style={{ margin: "0px", color: "#1f40a3" }}
+              >
                 NEED MORE POWER? REACH OUT TO A LOCAL ELECTRICIAN.
               </h1>
-              <h3 style={{ color: "#1f40a3" }}>
+              <h3 className="goto" style={{ color: "#1f40a3" }}>
                 ASK ABOUT AN ELECTRICAL PANEL INSTALLATION IN AUSTIN, TX
               </h3>
               <div className="text" style={{ color: "gray" }}>
@@ -118,7 +122,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
           </div>
 
           <div>
-            <h3 style={{ color: "#1f40a3" }}>
+            <h3 className="goto" style={{ color: "#1f40a3" }}>
               WHY YOU SHOULD MAKE AN ELECTRICAL PANEL UPGRADE YOUR TOP PRIORITY
             </h3>
             <div className="text" style={{ color: "gray" }}>
