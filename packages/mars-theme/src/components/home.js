@@ -106,7 +106,7 @@ const Home = ({ state, actions }) => {
               border: "none",
               backgroundColor: "#f4bb36",
               color: "white",
-              fontSize: 20,
+              fontSize: "20px",
               fontWeight: "light",
             }}
             link="/contact"
@@ -1357,8 +1357,14 @@ const Home = ({ state, actions }) => {
           >
             BRING YOUR LIGHT INTO THE 21ST CENTURY
           </h1>
-          <p style={{ color: "white", textShadow: "3px 4px 5px black" }}>
-            OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
+          <p
+            style={{
+              color: "white",
+              textShadow: "3px 4px 5px black",
+              fontSize: "20px",
+            }}
+          >
+            OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPGRADES
           </p>
           <Link
             style={{
@@ -1412,7 +1418,7 @@ const Home = ({ state, actions }) => {
                 textShadow: "3px 4px 5px black",
               }}
             >
-              OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
+              OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPGRADES
             </p>
             <Link
               style={{
@@ -1449,7 +1455,7 @@ const Home = ({ state, actions }) => {
                 fontSize: "14px",
               }}
             >
-              OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPDGRADES
+              OUR ELECTRICAL SERVICES INCLUDE LANDASCAPE LIGHTING UPGRADES
             </p>
             <Link
               style={{

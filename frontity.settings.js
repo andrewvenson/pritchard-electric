@@ -2,7 +2,7 @@ const settings = {
   name: "pritchard-electric",
   state: {
     frontity: {
-      url: "http://test.pritchardelectric.net.user.server296.com",
+      url: "https://manage.pritchardelectric.net",
       title: "Pritchard Electric",
       description: "WordPress installation for Frontity development",
     },
@@ -30,7 +30,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "http://test.pritchardelectric.net.user.server296.com/",
+          url: "https://manage.pritchardelectric.net",
           // url: "http://localhost/pedev",
         },
       },
