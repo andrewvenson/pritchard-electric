@@ -1695,8 +1695,21 @@ const Home = ({ state, actions }) => {
               <p>
                 Need a few electrical repairs or upgrades done around the house?
                 You can call Pritchard Electric, LLC for electrical issues of
-                all kinds, including repairs, electrical panel upgrades,
-                lighting services and new wiring installations.
+                all kinds, including repairs{" "}
+                <Link
+                  link="/electrical-panel-upgrades"
+                  style={{ color: "#f4bb36", textDecoration: "underline" }}
+                >
+                  electrical panel upgrades
+                </Link>
+                ,{" "}
+                <Link
+                  link="/lighting-services"
+                  style={{ color: "#f4bb36", textDecoration: "underline" }}
+                >
+                  lighting services
+                </Link>{" "}
+                and new wiring installations.
               </p>
               <p>
                 Trust your home or business to an electrician with over 10 years
