@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "./link";
+import ClipLoader from "react-spinners/ClipLoader";
 
 function Footer() {
   return (
@@ -7,10 +9,12 @@ function Footer() {
       <div
         style={{ padding: "10px", display: "flex", justifyContent: "center" }}
       >
-        <img
-          style={{ width: 145, height: 60 }}
-          src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/logo.png"
-        />
+        <Link link="/">
+          <img
+            style={{ width: 145, height: 60 }}
+            src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/logo.png"
+          />
+        </Link>
       </div>
       <div
         className="desktopFooter"

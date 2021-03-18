@@ -8,6 +8,15 @@ import Link from "./link";
 const Home = ({ state, actions }) => {
   useEffect(() => {
     actions.source.fetch("/home-post", { force: true });
+    const num1 = Math.floor(Math.random() * 10);
+    const num2 = Math.floor(Math.random() * 10);
+    const answer = num1 + num2;
+    setSecurityCheck({
+      ...securitycheck,
+      randomNum1: num1,
+      randomNum2: num2,
+      randomAnswer: answer,
+    });
   }, []);
 
   const [contactvals, setContactVals] = useState({
@@ -18,15 +27,42 @@ const Home = ({ state, actions }) => {
     message: "",
   });
 
+  const [securitycheck, setSecurityCheck] = useState({
+    randomNum1: null,
+    randomNum2: null,
+    randomAnswer: null,
+    clientAnswer: "",
+    human: "none",
+    firstname: "none",
+    lastname: "none",
+    email: "none",
+    phone: "none",
+    message: "none",
+  });
+
   const submitContactForm = (e) => {
     e.preventDefault();
+
+    setSecurityCheck({
+      ...securitycheck,
+      human:
+        parseInt(securitycheck.clientAnswer) !== securitycheck.randomAnswer
+          ? "block"
+          : "none",
+      firstname: contactvals.firstname == "" ? "block" : "none",
+      lastname: contactvals.lastname == "" ? "block" : "none",
+      email: contactvals.email == "" ? "block" : "none",
+      phone: contactvals.phone == "" ? "block" : "none",
+      message: contactvals.message == "" ? "block" : "none",
+    });
 
     if (
       contactvals.firstname !== "" &&
       contactvals.lastname !== "" &&
       contactvals.email !== "" &&
       contactvals.phone !== "" &&
-      contactvals.message !== ""
+      contactvals.message !== "" &&
+      parseInt(securitycheck.clientAnswer) == securitycheck.randomAnswer
     ) {
       axios
         .post("https://pritchard-email.herokuapp.com/post/sendemail", {
@@ -45,6 +81,24 @@ const Home = ({ state, actions }) => {
             email: "",
             phone: "",
             message: "",
+          });
+
+          const num1 = Math.floor(Math.random() * 10);
+          const num2 = Math.floor(Math.random() * 10);
+          const answer = num1 + num2;
+
+          setSecurityCheck({
+            ...securitycheck,
+            human: "none",
+            clientAnswer: "",
+            randomAnswer: answer,
+            randomNum1: num1,
+            randomNum2: num2,
+            firstname: "none",
+            lastname: "none",
+            email: "none",
+            phone: "none",
+            message: "none",
           });
         })
         .catch((err) => console.log(err));
@@ -1821,7 +1875,13 @@ const Home = ({ state, actions }) => {
               >
                 <form style={{ width: "300px" }}>
                   <label>
-                    <span style={{ color: "gray", fontWeight: "bold" }}>
+                    <span
+                      style={{
+                        color: "gray",
+                        fontWeight: "bold",
+                        fontSize: "15px",
+                      }}
+                    >
                       Name <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
@@ -1839,6 +1899,16 @@ const Home = ({ state, actions }) => {
                     <br />
                     <span style={{ fontSize: 12, color: "gray" }}>First</span>
                     <br />
+                    <p
+                      style={{
+                        color: "red",
+                        fontSize: 15,
+                        margin: 0,
+                        display: securitycheck.firstname,
+                      }}
+                    >
+                      Firstname is required
+                    </p>
                     <label>
                       <input
                         type="text"
@@ -1853,12 +1923,28 @@ const Home = ({ state, actions }) => {
                       />
                       <br />
                       <span style={{ fontSize: 12, color: "gray" }}>Last</span>
+                      <br />
+                      <p
+                        style={{
+                          color: "red",
+                          fontSize: 15,
+                          margin: 0,
+                          display: securitycheck.lastname,
+                        }}
+                      >
+                        Lastname is required
+                      </p>
                     </label>
                   </label>
                   <br />
-                  <br />
                   <label>
-                    <span style={{ color: "gray", fontWeight: "bold" }}>
+                    <span
+                      style={{
+                        color: "gray",
+                        fontWeight: "bold",
+                        fontSize: "15px",
+                      }}
+                    >
                       Phone <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
@@ -1873,11 +1959,27 @@ const Home = ({ state, actions }) => {
                         })
                       }
                     />
+                    <p
+                      style={{
+                        color: "red",
+                        fontSize: 15,
+                        margin: 0,
+                        display: securitycheck.phone,
+                      }}
+                    >
+                      (Format: 123-456-7890) Phone is required
+                    </p>
                   </label>
                   <br />
                   <br />
                   <label>
-                    <span style={{ color: "gray", fontWeight: "bold" }}>
+                    <span
+                      style={{
+                        color: "gray",
+                        fontWeight: "bold",
+                        fontSize: "15px",
+                      }}
+                    >
                       Email <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
@@ -1892,11 +1994,27 @@ const Home = ({ state, actions }) => {
                         })
                       }
                     />
+                    <p
+                      style={{
+                        color: "red",
+                        fontSize: 15,
+                        margin: 0,
+                        display: securitycheck.email,
+                      }}
+                    >
+                      Email is required
+                    </p>
                   </label>
                   <br />
                   <br />
                   <label>
-                    <span style={{ color: "gray", fontWeight: "bold" }}>
+                    <span
+                      style={{
+                        color: "gray",
+                        fontWeight: "bold",
+                        fontSize: "15px",
+                      }}
+                    >
                       Message/Suggestions{" "}
                       <span style={{ color: "red" }}>*</span>
                     </span>
@@ -1916,13 +2034,56 @@ const Home = ({ state, actions }) => {
                         })
                       }
                     />
+                    <p
+                      style={{
+                        color: "red",
+                        fontSize: 15,
+                        margin: 0,
+                        display: securitycheck.message,
+                      }}
+                    >
+                      Message/Suggestions is required
+                    </p>
                   </label>
                   <br />
                   <br />
                   <label>
-                    <span style={{ color: "gray", fontWeight: "bold" }}>
+                    <span
+                      style={{
+                        color: "gray",
+                        fontWeight: "bold",
+                        fontSize: "15px",
+                      }}
+                    >
                       Security Check <span style={{ color: "red" }}>*</span>
                     </span>
+                    <br />
+                    <span>{securitycheck.randomNum1}</span>
+                    <span> + </span>
+                    <span style={{ marginRight: "5px" }}>
+                      {securitycheck.randomNum2} =
+                    </span>
+                    <input
+                      type="text"
+                      style={{ ...contactInput, width: "200px" }}
+                      value={securitycheck.clientAnswer}
+                      onChange={(e) =>
+                        setSecurityCheck({
+                          ...securitycheck,
+                          clientAnswer: e.target.value,
+                        })
+                      }
+                    />
+                    <p
+                      style={{
+                        color: "red",
+                        fontSize: 15,
+                        margin: 0,
+                        display: securitycheck.human,
+                      }}
+                    >
+                      We could not verify you are a human please try again
+                    </p>
                   </label>
                   <br />
                   <br />

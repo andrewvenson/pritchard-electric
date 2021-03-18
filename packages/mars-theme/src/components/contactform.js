@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 function ContactForm() {
+  const [loader, showLoader] = useState(false);
   const [contactvals, setContactVals] = useState({
     firstname: "",
     lastname: "",
@@ -52,6 +54,7 @@ function ContactForm() {
 
   const submitContactForm = (e) => {
     e.preventDefault();
+    showLoader(true);
 
     setSecurityCheck({
       ...securitycheck,
@@ -104,7 +107,14 @@ function ContactForm() {
             randomAnswer: answer,
             randomNum1: num1,
             randomNum2: num2,
+            firstname: "none",
+            lastname: "none",
+            email: "none",
+            phone: "none",
+            message: "none",
           });
+
+          showLoader(false);
         })
         .catch((err) => console.log(err));
     }
@@ -254,8 +264,8 @@ function ContactForm() {
         </span>
         <br />
         <span>{securitycheck.randomNum1}</span>
-        <span>+</span>
-        <span style={{ marginRight: "5px" }}>{securitycheck.randomNum2}</span>
+        <span> + </span>
+        <span style={{ marginRight: "5px" }}>{securitycheck.randomNum2} =</span>
         <input
           type="text"
           style={{ ...contactInput, width: "200px" }}
@@ -277,20 +287,26 @@ function ContactForm() {
       </label>
       <br />
       <br />
-      <button
-        style={{
-          padding: 10,
-          border: "none",
-          backgroundColor: "#f4bb36",
-          color: "white",
-          width: "100%",
-          fontSize: 20,
-          fontWeight: "light",
-        }}
-        onClick={(e) => submitContactForm(e)}
-      >
-        SUBMIT
-      </button>
+      {loader ? (
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <PropagateLoader color="#f4bb36" />
+        </div>
+      ) : (
+        <button
+          style={{
+            padding: 10,
+            border: "none",
+            backgroundColor: "#f4bb36",
+            color: "white",
+            width: "100%",
+            fontSize: 20,
+            fontWeight: "light",
+          }}
+          onClick={(e) => submitContactForm(e)}
+        >
+          SUBMIT
+        </button>
+      )}
     </form>
   );
 }
