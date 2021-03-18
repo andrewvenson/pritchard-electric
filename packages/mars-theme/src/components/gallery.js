@@ -1,92 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { styled, connect, Global, decode } from "frontity";
+import axios from "axios";
 import Footer from "./footer";
 import Galleri from "react-grid-gallery";
 import Link from "./link";
 
 function Gallery({ state, actions }) {
-  //useEffect(() => {
-  //actions.source.fetch("/home-post", { force: true });
-  //}, []);
+  const [gallery, setGallery] = useState([]);
 
-  //const data = state.source.get("/home-post/");
-
-  //   if (data.isPost) {
-  //     const category = state.source.post[data.id];
-  //     const firstHeader = category.content.rendered;
-
-  const IMAGES = [
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n_1_.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/394765_139812716188312_1908785223_n_1_.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/11219309_498625093640404_8661194484712942164_n.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/11219309_498625093640404_8661194484712942164_n.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/11223579_490264237809823_7210810231468267911_o.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/11223579_490264237809823_7210810231468267911_o.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/11226912_533966266772953_2451784909899282063_n.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/11226912_533966266772953_2451784909899282063_n.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/11780048_520027718166808_8148905086326766674_o.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/11780048_520027718166808_8148905086326766674_o.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/11870665_498624920307088_2661147460171180406_n.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/11870665_498624920307088_2661147460171180406_n.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/12309723_533963856773194_6494885025188887892_o.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/12309723_533963856773194_6494885025188887892_o.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-    {
-      src:
-        "http://pritchardelectric.net/files/2019/01/12374815_533962513439995_1319413800049393160_o.jpg",
-      thumbnail:
-        "http://pritchardelectric.net/files/2019/01/12374815_533962513439995_1319413800049393160_o.jpg",
-      thumbnailWidth: 400,
-      thumbnailHeight: 212,
-    },
-  ];
+  useEffect(() => {
+    const data = axios
+      .get("https://manage.pritchardelectric.net/wp-json/wp/v2/media")
+      .then((response) => {
+        setGallery(
+          response.data
+            .filter((item, key) => {
+              return item.title.rendered.includes("gallery");
+            })
+            .map((item, key) => {
+              return {
+                src: item.source_url,
+                thumbnail: item.source_url,
+                thumbnailWidth: 400,
+                thumbnailHeight: 212,
+              };
+            })
+        );
+      });
+  }, []);
 
   return (
     <main
       style={{
         width: "100%",
-
         boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
       }}
     >
@@ -110,7 +56,7 @@ function Gallery({ state, actions }) {
           </Link>
 
           <div style={{ marginTop: 50 }}>
-            <Galleri images={IMAGES} />
+            <Galleri images={gallery} />
           </div>
         </div>
       </section>
