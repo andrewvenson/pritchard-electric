@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { styled, connect, Global, decode } from "frontity";
+import PropagateLoader from "react-spinners/PropagateLoader";
 import Footer from "./footer";
 import ContactForm from "./contactform";
 import Link from "./link";
@@ -18,6 +19,8 @@ const Home = ({ state, actions }) => {
       randomAnswer: answer,
     });
   }, []);
+
+  const [loader, showLoader] = useState(false);
 
   const [contactvals, setContactVals] = useState({
     firstname: "",
@@ -42,6 +45,7 @@ const Home = ({ state, actions }) => {
 
   const submitContactForm = (e) => {
     e.preventDefault();
+    showLoader(true);
 
     setSecurityCheck({
       ...securitycheck,
@@ -100,8 +104,11 @@ const Home = ({ state, actions }) => {
             phone: "none",
             message: "none",
           });
+          showLoader(false);
         })
         .catch((err) => console.log(err));
+    } else {
+      showLoader(false);
     }
   };
 
@@ -2087,7 +2094,27 @@ const Home = ({ state, actions }) => {
                   </label>
                   <br />
                   <br />
-                  <button
+                  {loader ? (
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <PropagateLoader color="#f4bb36" />
+                    </div>
+                  ) : (
+                    <button
+                      style={{
+                        padding: 10,
+                        border: "none",
+                        backgroundColor: "#f4bb36",
+                        color: "white",
+                        width: "100%",
+                        fontSize: 20,
+                        fontWeight: "light",
+                      }}
+                      onClick={(e) => submitContactForm(e)}
+                    >
+                      SUBMIT
+                    </button>
+                  )}
+                  {/* <button
                     style={{
                       padding: 10,
                       border: "none",
@@ -2100,7 +2127,7 @@ const Home = ({ state, actions }) => {
                     onClick={(e) => submitContactForm(e)}
                   >
                     SUBMIT
-                  </button>
+                  </button> */}
                 </form>
               </div>
             </div>

@@ -117,6 +117,8 @@ function ContactForm() {
           showLoader(false);
         })
         .catch((err) => console.log(err));
+    } else {
+      showLoader(false);
     }
   };
 
