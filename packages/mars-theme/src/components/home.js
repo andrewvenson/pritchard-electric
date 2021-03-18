@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { styled, connect, Global, decode } from "frontity";
 import Footer from "./footer";
 import ContactForm from "./contactform";
@@ -8,6 +9,47 @@ const Home = ({ state, actions }) => {
   useEffect(() => {
     actions.source.fetch("/home-post", { force: true });
   }, []);
+
+  const [contactvals, setContactVals] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const submitContactForm = (e) => {
+    e.preventDefault();
+
+    if (
+      contactvals.firstname !== "" &&
+      contactvals.lastname !== "" &&
+      contactvals.email !== "" &&
+      contactvals.phone !== "" &&
+      contactvals.message !== ""
+    ) {
+      axios
+        .post("https://pritchard-email.herokuapp.com/post/sendemail", {
+          firstname: contactvals.firstname,
+          lastname: contactvals.lastname,
+          email: contactvals.email,
+          phone: contactvals.phone,
+          message: contactvals.message,
+        })
+        .then((response) => {
+          console.log(response);
+          setContactVals({
+            ...contactvals,
+            firstname: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+        })
+        .catch((err) => console.log(err));
+    }
+  };
 
   const data = state.source.get("/home-post/");
 
@@ -1783,12 +1825,32 @@ const Home = ({ state, actions }) => {
                       Name <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
-                    <input type="text" style={{ ...contactInput }} />
+                    <input
+                      type="text"
+                      style={{ ...contactInput }}
+                      value={contactvals.firstname}
+                      onChange={(e) =>
+                        setContactVals({
+                          ...contactvals,
+                          firstname: e.target.value,
+                        })
+                      }
+                    />
                     <br />
                     <span style={{ fontSize: 12, color: "gray" }}>First</span>
                     <br />
                     <label>
-                      <input type="text" style={{ ...contactInput }} />
+                      <input
+                        type="text"
+                        style={{ ...contactInput }}
+                        value={contactvals.lastname}
+                        onChange={(e) =>
+                          setContactVals({
+                            ...contactvals,
+                            lastname: e.target.value,
+                          })
+                        }
+                      />
                       <br />
                       <span style={{ fontSize: 12, color: "gray" }}>Last</span>
                     </label>
@@ -1800,7 +1862,17 @@ const Home = ({ state, actions }) => {
                       Phone <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
-                    <input type="phone" style={{ ...contactInput }} />
+                    <input
+                      type="phone"
+                      style={{ ...contactInput }}
+                      value={contactvals.phone}
+                      onChange={(e) =>
+                        setContactVals({
+                          ...contactvals,
+                          phone: e.target.value,
+                        })
+                      }
+                    />
                   </label>
                   <br />
                   <br />
@@ -1809,7 +1881,17 @@ const Home = ({ state, actions }) => {
                       Email <span style={{ color: "red" }}>*</span>
                     </span>
                     <br />
-                    <input type="email" style={{ ...contactInput }} />
+                    <input
+                      type="email"
+                      style={{ ...contactInput }}
+                      value={contactvals.email}
+                      onChange={(e) =>
+                        setContactVals({
+                          ...contactvals,
+                          email: e.target.value,
+                        })
+                      }
+                    />
                   </label>
                   <br />
                   <br />
@@ -1826,6 +1908,13 @@ const Home = ({ state, actions }) => {
                         height: "100px",
                         resize: "none",
                       }}
+                      value={contactvals.message}
+                      onChange={(e) =>
+                        setContactVals({
+                          ...contactvals,
+                          message: e.target.value,
+                        })
+                      }
                     />
                   </label>
                   <br />
@@ -1847,6 +1936,7 @@ const Home = ({ state, actions }) => {
                       fontSize: 20,
                       fontWeight: "light",
                     }}
+                    onClick={(e) => submitContactForm(e)}
                   >
                     SUBMIT
                   </button>
