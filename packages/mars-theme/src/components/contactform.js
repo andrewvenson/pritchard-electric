@@ -94,7 +94,6 @@ function ContactForm() {
         </div>
       </label>
       <br />
-      <br />
       <label>
         <span style={{ color: "gray", fontWeight: "bold" }}>
           Phone <span style={{ color: "red" }}>*</span>
