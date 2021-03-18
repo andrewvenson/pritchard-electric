@@ -171,7 +171,8 @@ function ContactForm() {
         </span>
         <br />
         <input
-          type="phone"
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           style={{ ...contactInput }}
           value={contactvals.phone}
           onChange={(e) =>
@@ -186,7 +187,7 @@ function ContactForm() {
             display: securitycheck.phone,
           }}
         >
-          Phone is required
+          (Format: 123-456-7890) Phone is required
         </p>
       </label>
       <br />

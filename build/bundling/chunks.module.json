@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "71947c82c2cc1899f20c",
+  "hash": "d97f408ccae99ce8330d",
   "publicPath": "/static/",
   "outputPath": "C:\\projects\\frontity\\pritchard-electric\\build\\static",
   "assetsByChunkName": {
@@ -80,7 +80,7 @@
     },
     {
       "name": "pritchard-electric.module.js",
-      "size": 6893062,
+      "size": 6893246,
       "chunks": [
         "pritchard-electric"
       ],
