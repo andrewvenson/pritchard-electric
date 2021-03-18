@@ -38,7 +38,9 @@ const Theme = ({ state }) => {
       margin: 0;
       // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       //   "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-family: "Montserrat", sans-serif;
+      // font-family: "Montserrat", sans-serif;
+      // font-family: "Lato", sans-serif;
+      font-family: "Roboto Condensed", sans-serif;
       overflow-y: ${sidenav || socialmodal ? "hidden" : "visible"};
     }
     a,
@@ -215,8 +217,12 @@ const Theme = ({ state }) => {
         <meta name="description" content={state.frontity.description} />
         <html lang="en" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        {/* <link
+          href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+          rel="stylesheet"
+        ></link> */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
