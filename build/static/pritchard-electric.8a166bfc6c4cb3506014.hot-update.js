@@ -1,0 +1,17 @@
+webpackHotUpdate("pritchard-electric",{
+
+/***/ "./packages/mars-theme/src/components/home.js":
+/*!****************************************************!*\
+  !*** ./packages/mars-theme/src/components/home.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: /Users/andrewvenson/projects/frontity/pritchard-electric/packages/mars-theme/src/components/home.js: Unexpected token, expected \\\",\\\" (2195:1)\\n\\n\\u001b[0m \\u001b[90m 2193 | \\u001b[39m  }\\u001b[0m\\n\\u001b[0m \\u001b[90m 2194 | \\u001b[39m  \\u001b[36mreturn\\u001b[39m \\u001b[36mnull\\u001b[39m\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 2195 | \\u001b[39m}\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m      | \\u001b[39m \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 2196 | \\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 2197 | \\u001b[39m\\u001b[90m// Connect the Item to gain access to `state` as a prop\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 2198 | \\u001b[39m\\u001b[36mexport\\u001b[39m \\u001b[36mdefault\\u001b[39m connect(\\u001b[33mHome\\u001b[39m)\\u001b[33m;\\u001b[39m\\u001b[0m\\n    at Object._raise (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/error.js:60:45)\\n    at Object.raiseWithData (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/error.js:55:17)\\n    at Object.raise (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/error.js:39:17)\\n    at Object.unexpected (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/util.js:139:16)\\n    at Object.expect (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/util.js:116:28)\\n    at Object.parseCallExpressionArguments (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/expression.js:853:14)\\n    at Object.parseCoverCallAndAsyncArrowHead (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/expression.js:733:29)\\n    at Object.parseSubscript (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/expression.js:628:19)\\n    at Object.parseSubscripts (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/expression.js:586:19)\\n    at Object.parseExprSubscripts (/Users/andrewvenson/projects/frontity/pritchard-electric/node_modules/@babel/parser/src/parser/expression.js:571:17)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3BhY2thZ2VzL21hcnMtdGhlbWUvc3JjL2NvbXBvbmVudHMvaG9tZS5qcy5qcyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./packages/mars-theme/src/components/home.js\n");
+
+/***/ }),
+
+/***/ "./packages/mars-theme/src/components/notfication-modal.js":
+false
+
+})

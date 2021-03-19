@@ -19,6 +19,7 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
       randomNum2: num2,
       randomAnswer: answer,
     });
+    showNotificationModal(!notificationmodal);
   }, []);
 
   const [loader, showLoader] = useState(false);

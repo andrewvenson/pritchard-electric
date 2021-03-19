@@ -32,7 +32,7 @@ const Theme = ({ state }) => {
 
   const [sidenav, setSideNav] = useState(false);
   const [socialmodal, showSocialModal] = useState(false);
-  const [notificationmodal, showNotificationModal] = useState(true);
+  const [notificationmodal, showNotificationModal] = useState(false);
 
   const globalStyles = css`
     body {
