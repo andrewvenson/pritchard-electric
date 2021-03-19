@@ -32,6 +32,7 @@ const Theme = ({ state }) => {
 
   const [sidenav, setSideNav] = useState(false);
   const [socialmodal, showSocialModal] = useState(false);
+  const [notificationmodal, showNotificationModal] = useState(true);
 
   const globalStyles = css`
     body {
@@ -41,7 +42,9 @@ const Theme = ({ state }) => {
       // font-family: "Montserrat", sans-serif;
       // font-family: "Lato", sans-serif;
       font-family: "Roboto Condensed", sans-serif;
-      overflow-y: ${sidenav || socialmodal ? "hidden" : "visible"};
+      overflow-y: ${sidenav || socialmodal || notificationmodal
+        ? "hidden"
+        : "visible"};
     }
     a,
     a:visited {
@@ -187,7 +190,18 @@ const Theme = ({ state }) => {
         font-size: 13px !important;
       }
       .text p {
-        font-size: 12px;
+        font-size: 12px !important;
+      }
+      .notificationButton {
+        font-size: 12px !important;
+        padding: 5px !important;
+      }
+      .notificationLogo {
+        width: 200px !important;
+        height: 75px !important;
+      }
+      .notificationText {
+        font-size: 12px !important;
       }
     }
 
@@ -388,7 +402,11 @@ const Theme = ({ state }) => {
           <List when={data.isArchive} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
-          <Home when={data.isHome} />
+          <Home
+            when={data.isHome}
+            showNotificationModal={showNotificationModal}
+            notificationmodal={notificationmodal}
+          />
           <Contact when={data.isContact} />
           <Faq when={data.isFaq} />
           <Gallery when={data.isGallery} />

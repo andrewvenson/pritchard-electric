@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { styled, connect, Global, decode } from "frontity";
+import { styled, connect, css, Global, decode } from "frontity";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import Footer from "./footer";
 import ContactForm from "./contactform";
 import Link from "./link";
+import NotificationModal from "./notfication-modal";
 
-const Home = ({ state, actions }) => {
+const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
   useEffect(() => {
     actions.source.fetch("/home-post", { force: true });
     const num1 = Math.floor(Math.random() * 10);
@@ -157,12 +158,24 @@ const Home = ({ state, actions }) => {
   };
 
   if (data.isPost) {
+    const globalStyles = css`
+      body {
+        overflow-y: ${notificationmodal ? "hidden" : "visible"};
+      }
+    `;
     const category = state.source.post[data.id];
     const firstHeader = category.content.rendered;
 
     return (
       <main style={{ width: "100%", height: "100vh" }}>
         {/* Regular width */}
+
+        {notificationmodal && (
+          <NotificationModal
+            notificationmodal={notificationmodal}
+            showNotificationModal={showNotificationModal}
+          />
+        )}
 
         <section
           className="desktopWorkspace"
