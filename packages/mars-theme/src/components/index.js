@@ -336,7 +336,13 @@ const Theme = ({ state }) => {
                       src={Facebook}
                     />
                   </a>
-                  <span>Facebook</span>
+                  <a
+                    href="https://www.facebook.com/pages/category/Electrician/Pritchard-Electric-139403462895904/"
+                    title="Facebook"
+                    target="_blank"
+                  >
+                    <span>Facebook</span>
+                  </a>
                 </strong>
               </div>
               <div
@@ -355,7 +361,6 @@ const Theme = ({ state }) => {
                     href="mailto:?subject=Check out Pritchard Electric%2C LLC&amp;body=I thought you%27d be interested in this site%3A%0Ahttp%3A%2F%2Fpritchardelectric.net%2F"
                     title="Send to a Friend"
                     target="_blank"
-                    class="email_icon"
                   >
                     <img
                       style={{ marginRight: "8px" }}
@@ -364,7 +369,13 @@ const Theme = ({ state }) => {
                       src={Mail}
                     />
                   </a>
-                  <span>Send to a Friend</span>
+                  <a
+                    href="mailto:?subject=Check out Pritchard Electric%2C LLC&amp;body=I thought you%27d be interested in this site%3A%0Ahttp%3A%2F%2Fpritchardelectric.net%2F"
+                    title="Send to a Friend"
+                    target="_blank"
+                  >
+                    <span>Send to a Friend</span>
+                  </a>
                 </strong>
               </div>
               <div
@@ -386,7 +397,9 @@ const Theme = ({ state }) => {
                       src={Fax}
                     />
                   </a>
-                  <span>Print This Page</span>
+                  <a href="javascript:window.print()" title="Print This Page">
+                    <span>Print This Page</span>
+                  </a>
                 </strong>
               </div>
             </div>
