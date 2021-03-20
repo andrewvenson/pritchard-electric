@@ -249,10 +249,22 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
             backgroundPosition: "center",
             boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
             padding: "0px 40px 40px 40px",
+            position: "relative",
           }}
         >
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              top: 0,
+              left: 0,
+              zIndex: 500,
+              position: "absolute",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
+          ></div>
           {/* DESKTOP WORKSPACE TEXT */}
-          <div className="desktopWorkspaceText">
+          <div style={{ zIndex: 999 }} className="desktopWorkspaceText">
             <h1
               style={{
                 color: "white",
@@ -287,7 +299,10 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
           </div>
 
           {/* MOBILE WORKSPACE TEXT */}
-          <div className="mobileWorkspaceText" style={{ display: "none" }}>
+          <div
+            className="mobileWorkspaceText"
+            style={{ display: "none", zIndex: 9999 }}
+          >
             <h1
               style={{
                 color: "white",
@@ -1520,10 +1535,22 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
             backgroundPosition: "center",
             boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
             padding: "0px 40px 40px 40px",
+            position: "relative",
           }}
         >
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              top: 0,
+              left: 0,
+              zIndex: 500,
+              position: "absolute",
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+            }}
+          ></div>
           {/* DESKTOP WORKSPACE TEXT */}
-          <div className="desktopWorkspaceText">
+          <div className="desktopWorkspaceText" style={{ zIndex: 999 }}>
             <h1
               style={{
                 color: "white",
@@ -1558,7 +1585,10 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
           </div>
 
           {/* MOBILE WORKSPACE TEXT */}
-          <div className="mobileWorkspaceText" style={{ display: "none" }}>
+          <div
+            className="mobileWorkspaceText"
+            style={{ display: "none", zIndex: 999 }}
+          >
             <h1
               style={{
                 color: "white",
