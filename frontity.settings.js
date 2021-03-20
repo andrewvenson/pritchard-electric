@@ -3,8 +3,8 @@ const settings = {
   state: {
     frontity: {
       url: "https://manage.pritchardelectric.net",
-      title: "Pritchard Electric",
-      description: "WordPress installation for Frontity development",
+      title: "Contact an Electrician | Austin, TX | Pritchard Electric, LLC",
+      description: "Pritchard Electric",
     },
   },
   packages: [
@@ -31,7 +31,6 @@ const settings = {
       state: {
         source: {
           url: "https://manage.pritchardelectric.net",
-          // url: "http://localhost/pedev",
         },
       },
     },
