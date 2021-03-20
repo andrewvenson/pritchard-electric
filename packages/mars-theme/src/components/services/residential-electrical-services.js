@@ -4,15 +4,12 @@ import Footer from "../footer";
 import Link from "../link";
 
 function ResidentialElectrical({ state, actions }) {
-  //useEffect(() => {
-  //actions.source.fetch("/home-post", { force: true });
-  //}, []);
-
   //const data = state.source.get("/home-post/");
 
   //   if (data.isPost) {
   //     const category = state.source.post[data.id];
   //     const firstHeader = category.content.rendered;
+
   return (
     <main
       style={{
@@ -20,7 +17,9 @@ function ResidentialElectrical({ state, actions }) {
         boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
+      >
         <section
           style={{
             maxWidth: "986.97px",
@@ -78,7 +77,7 @@ function ResidentialElectrical({ state, actions }) {
             <div>
               <img
                 style={{
-                  width: "90vw",
+                  width: "100%",
                 }}
                 src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-panel-upgrades.jpg"
               />

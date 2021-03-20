@@ -20,7 +20,9 @@ function CommercialElectrical({ state, actions }) {
         boxShadow: "inset 0 8px 8px -6px rgba(0, 0, 0, 0.5)",
       }}
     >
-      <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}>
+      <div
+        style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
+      >
         <section
           style={{
             maxWidth: "986.97px",
@@ -83,7 +85,7 @@ function CommercialElectrical({ state, actions }) {
             <div>
               <img
                 style={{
-                  width: "90vw",
+                  width: "100%",
                 }}
                 src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/commercial-electrical-services.jpg"
               />
