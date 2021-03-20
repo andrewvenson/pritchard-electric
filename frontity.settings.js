@@ -3,7 +3,7 @@ const settings = {
   state: {
     frontity: {
       url: "https://manage.pritchardelectric.net",
-      title: "Contact an Electrician | Austin, TX | Pritchard Electric, LLC",
+      title: "| Austin, TX | Pritchard Electric, LLC",
       description: "Pritchard Electric",
     },
   },
