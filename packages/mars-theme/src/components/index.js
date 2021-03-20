@@ -44,7 +44,7 @@ const Theme = ({ state }) => {
       font-family: "Roboto Condensed", sans-serif;
       overflow-y: ${sidenav || socialmodal || notificationmodal
         ? "hidden"
-        : "visible"};
+        : "scroll"};
     }
     a,
     a:visited {

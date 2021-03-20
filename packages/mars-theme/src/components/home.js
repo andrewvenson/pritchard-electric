@@ -19,6 +19,9 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
       randomNum2: num2,
       randomAnswer: answer,
     });
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
     showNotificationModal(!notificationmodal);
   }, []);
 
