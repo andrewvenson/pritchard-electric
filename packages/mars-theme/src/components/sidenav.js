@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Head, connect, decode } from "frontity";
 import Link from "./link";
 
 function SideNav(props) {
@@ -38,6 +39,7 @@ function SideNav(props) {
       <div style={{ marginBottom: 10 }}>
         <Link
           link="/"
+          style={{ color: props.state.router.link == "/" && "#f4bb36" }}
           onClick={() => {
             props.setSideNav(!props.sidenav);
           }}
@@ -53,6 +55,11 @@ function SideNav(props) {
               onClick={() => {
                 props.setSideNav(!props.sidenav);
               }}
+              style={{
+                color:
+                  props.state.router.link ==
+                    "/residential-electrical-services/" && "#f4bb36",
+              }}
               link="/residential-electrical-services"
             >
               RESIDENTIAL ELECTRICAL SERVICES
@@ -62,6 +69,11 @@ function SideNav(props) {
             <Link
               onClick={() => {
                 props.setSideNav(!props.sidenav);
+              }}
+              style={{
+                color:
+                  props.state.router.link == "/electrical-panel-upgrades/" &&
+                  "#f4bb36",
               }}
               link="electrical-panel-upgrades"
             >
@@ -73,6 +85,11 @@ function SideNav(props) {
               onClick={() => {
                 props.setSideNav(!props.sidenav);
               }}
+              style={{
+                color:
+                  props.state.router.link ==
+                    "/commercial-electrical-services/" && "#f4bb36",
+              }}
               link="/commercial-electrical-services"
             >
               COMMERCIAL ELECTRICAL SERVICES
@@ -82,6 +99,10 @@ function SideNav(props) {
             <Link
               onClick={() => {
                 props.setSideNav(!props.sidenav);
+              }}
+              style={{
+                color:
+                  props.state.router.link == "/lighting-services/" && "#f4bb36",
               }}
               link="/lighting-services"
             >
@@ -95,6 +116,7 @@ function SideNav(props) {
           onClick={() => {
             props.setSideNav(!props.sidenav);
           }}
+          style={{ color: props.state.router.link == "/gallery/" && "#f4bb36" }}
           link="/gallery"
         >
           GALLERY
@@ -105,6 +127,7 @@ function SideNav(props) {
           onClick={() => {
             props.setSideNav(!props.sidenav);
           }}
+          style={{ color: props.state.router.link == "/faq/" && "#f4bb36" }}
           link="/faq"
         >
           FAQ
@@ -115,6 +138,7 @@ function SideNav(props) {
           onClick={() => {
             props.setSideNav(!props.sidenav);
           }}
+          style={{ color: props.state.router.link == "/contact/" && "#f4bb36" }}
           link="/contact"
         >
           CONTACT
@@ -124,4 +148,4 @@ function SideNav(props) {
   );
 }
 
-export default SideNav;
+export default connect(SideNav);
