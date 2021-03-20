@@ -21,7 +21,7 @@ function ElectricalPanelUpgrades({ state, actions }) {
       }}
     >
       <div
-        style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
+        style={{ display: "flex", justifyContent: "center", marginTop: "35px" }}
       >
         <section
           style={{

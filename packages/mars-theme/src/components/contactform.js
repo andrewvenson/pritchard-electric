@@ -40,6 +40,7 @@ function ContactForm() {
   const contactInput = {
     border: "1px solid lightgray",
     height: "30px",
+    padding: "2px",
     width: "100%",
     backgroundColor: "whitesmoke",
     marginTop: "4px",
@@ -48,6 +49,7 @@ function ContactForm() {
   const contactSuggestions = {
     border: "1px solid lightgray",
     width: "100%",
+    padding: "2px",
     backgroundColor: "whitesmoke",
     marginTop: "4px",
   };
@@ -123,7 +125,7 @@ function ContactForm() {
   };
 
   return (
-    <form style={{ width: "100%" }}>
+    <form style={{ padding: "0px 15px 0px 15px" }}>
       <label>
         <span style={{ color: "gray", fontWeight: "bold", fontSize: "15px" }}>
           Name <span style={{ color: "red" }}>*</span>
