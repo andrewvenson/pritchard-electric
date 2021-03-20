@@ -125,7 +125,7 @@ function ContactForm() {
   };
 
   return (
-    <form style={{ padding: "0px 15px 0px 15px" }}>
+    <form style={{ padding: "0px 10px 0px 10px" }}>
       <label>
         <span style={{ color: "gray", fontWeight: "bold", fontSize: "15px" }}>
           Name <span style={{ color: "red" }}>*</span>

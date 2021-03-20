@@ -52,7 +52,7 @@ const NotificationModal = ({ showNotificationModal, notificationmodal }) => {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "25px",
+              // marginTop: "10px",
               textAlign: "center",
             }}
           >
