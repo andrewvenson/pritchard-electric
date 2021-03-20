@@ -87,7 +87,6 @@ const Header = ({
               href="mailto:?subject=Check out Pritchard Electric%2C LLC&amp;body=I thought you%27d be interested in this site%3A%0Ahttp%3A%2F%2Fpritchardelectric.net%2F"
               title="Send to a Friend"
               target="_blank"
-              class="email_icon"
             >
               <img
                 style={{ marginRight: "8px" }}
@@ -96,7 +95,11 @@ const Header = ({
                 src={Mail}
               />
             </a>
-            <a href="javascript:window.print()" title="Print This Page">
+            <a
+              onClick={() => window.print()}
+              style={{ cursor: "pointer" }}
+              title="Print This Page"
+            >
               <img width="20px" height="20px" src={Fax} />
             </a>
           </div>

@@ -389,7 +389,11 @@ const Theme = ({ state }) => {
                     justifyContent: "flex-start",
                   }}
                 >
-                  <a href="javascript:window.print()" title="Print This Page">
+                  <a
+                    onClick={() => window.print()}
+                    style={{ cursor: "pointer" }}
+                    title="Print This Page"
+                  >
                     <img
                       width="20px"
                       height="20px"
@@ -397,7 +401,11 @@ const Theme = ({ state }) => {
                       src={Fax}
                     />
                   </a>
-                  <a href="javascript:window.print()" title="Print This Page">
+                  <a
+                    onClick={() => window.print()}
+                    style={{ cursor: "pointer" }}
+                    title="Print This Page"
+                  >
                     <span>Print This Page</span>
                   </a>
                 </strong>

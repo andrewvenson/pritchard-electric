@@ -343,7 +343,10 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
         </section>
 
         {/* Service Sections */}
-        <section class="desktopView" style={{ width: "100%", display: "flex" }}>
+        <section
+          className="desktopView"
+          style={{ width: "100%", display: "flex" }}
+        >
           {/* Electrical Panel Upgrades */}
           <div
             style={{ ...width, position: "relative", overflow: "hidden" }}
@@ -701,7 +704,7 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
 
         {/* Mobile View - Service Sections - 1086px */}
         <section
-          class="mobileView"
+          className="mobileView"
           style={{
             width: "100%",
             display: "flex",
@@ -1085,7 +1088,7 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
 
         {/* Mobile View - Service Sections - 560px*/}
         <section
-          class="mobile560View"
+          className="mobile560View"
           style={{
             width: "100%",
             display: "flex",
@@ -1685,7 +1688,6 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
           >
             <img
               src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-testing.jpg"
-              alt
               width="100%"
             />
           </div>
@@ -1750,7 +1752,6 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
           >
             <img
               src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-testing.jpg"
-              alt
               width="100%"
             />
           </div>
@@ -1813,7 +1814,6 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
           >
             <img
               src="https://manage.pritchardelectric.net/wp-content/uploads/2021/03/electrical-testing.jpg"
-              alt
               width="100%"
             />
           </div>
