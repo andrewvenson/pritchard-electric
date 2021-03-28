@@ -35,6 +35,8 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
     message: "",
   });
 
+  const [sentmessage, showSentMessage] = useState(false);
+
   const [securitycheck, setSecurityCheck] = useState({
     randomNum1: null,
     randomNum2: null,
@@ -110,6 +112,8 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
             message: "none",
           });
           showLoader(false);
+          showSentMessage(true);
+          setTimeout(() => showSentMessage(false), 7000);
         })
         .catch((err) => console.log(err));
     } else {
@@ -2146,35 +2150,26 @@ const Home = ({ state, actions, notificationmodal, showNotificationModal }) => {
                       <PropagateLoader color="#f4bb36" />
                     </div>
                   ) : (
-                    <button
-                      style={{
-                        padding: 10,
-                        border: "none",
-                        backgroundColor: "#f4bb36",
-                        color: "white",
-                        width: "100%",
-                        fontSize: 20,
-                        fontWeight: "light",
-                      }}
-                      onClick={(e) => submitContactForm(e)}
-                    >
-                      SUBMIT
-                    </button>
+                    <>
+                        <button
+                          style={{
+                            padding: 10,
+                            border: "none",
+                            backgroundColor: "#f4bb36",
+                            color: "white",
+                            width: "100%",
+                            fontSize: 20,
+                            fontWeight: "light",
+                          }}
+                          onClick={(e) => submitContactForm(e)}
+                        >
+                          SUBMIT
+                        </button>
+                        {
+                            sentmessage && <div style={{backgroundColor:"#FFFAC6", padding: "20px", marginTop: "10px", display: "flex", justifyContent: "center"}}><p>Thank you for contacting us! We will get in contact with you shortly.</p></div>
+                        }
+                    </>
                   )}
-                  {/* <button
-                    style={{
-                      padding: 10,
-                      border: "none",
-                      backgroundColor: "#f4bb36",
-                      color: "white",
-                      width: "100%",
-                      fontSize: 20,
-                      fontWeight: "light",
-                    }}
-                    onClick={(e) => submitContactForm(e)}
-                  >
-                    SUBMIT
-                  </button> */}
                 </form>
               </div>
             </div>
