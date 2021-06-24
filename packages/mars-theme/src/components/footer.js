@@ -7,6 +7,11 @@ function Footer() {
     <>
       {/* BOTTOM LOGO */}
       <div
+        style={{marginTop: "25px", display: "flex", justifyContent: "center" }}
+      >
+	  <iframe border="0" frameBorder="0" style={{border: "0",  height:"100px", width:"150px"}} src="https://seal-fortworth.bbb.org/frame/ruhzbum/bbb-90102549.png?chk=15C359ED86" />
+      </div>
+      <div
         style={{ padding: "10px", display: "flex", justifyContent: "center" }}
       >
         <Link link="/">
