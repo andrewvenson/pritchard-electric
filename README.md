@@ -4,4 +4,4 @@
 - Using Wordpress as headless cms
 - Heroku for business email node.js service
 - Hosted on Vercel
-- https://pritchard-electric.vercel.app || https://pritchardelectric.net
+- https://dev.pritchardelectric.net || https://pritchardelectric.net
