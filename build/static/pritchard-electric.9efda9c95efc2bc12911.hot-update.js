@@ -1,0 +1,17 @@
+webpackHotUpdate("pritchard-electric",{
+
+/***/ "./node_modules/react-faq-component/build/index.es.js":
+false,
+
+/***/ "./packages/mars-theme/src/components/faq.js":
+/*!***************************************************!*\
+  !*** ./packages/mars-theme/src/components/faq.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: /home/codemonk/projects/pritchard/pritchard-electric/packages/mars-theme/src/components/faq.js: Unterminated string constant (82:17)\\n\\n\\u001b[0m \\u001b[90m 80 | \\u001b[39m      {\\u001b[0m\\n\\u001b[0m \\u001b[90m 81 | \\u001b[39m        title\\u001b[33m:\\u001b[39m \\u001b[32m\\\"What do I do if my circuit keeps overloading?\\\"\\u001b[39m\\u001b[33m,\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 82 | \\u001b[39m        content\\u001b[33m:\\u001b[39m \\u001b[32m\\\"(\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m    | \\u001b[39m                 \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 83 | \\u001b[39m          \\u001b[33m<\\u001b[39m\\u001b[33mp\\u001b[39m\\u001b[33m>\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 84 | \\u001b[39m            \\u001b[33mConfirm\\u001b[39m the electrical demand of each item on that circuit\\u001b[33m.\\u001b[39m \\u001b[33mIt\\u001b[39m may\\u001b[0m\\n\\u001b[0m \\u001b[90m 85 | \\u001b[39m            be as easy as moving an item to another location and plugging \\u001b[36min\\u001b[39m to\\u001b[0m\\n    at Object._raise (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/parser/error.js:60:45)\\n    at Object.raiseWithData (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/parser/error.js:55:17)\\n    at Object.raise (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/parser/error.js:39:17)\\n    at Object.readString (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/tokenizer/index.js:1249:20)\\n    at Object.getTokenFromCode (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/tokenizer/index.js:845:14)\\n    at Object.getTokenFromCode (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/plugins/jsx/index.js:592:20)\\n    at Object.nextToken (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/tokenizer/index.js:247:12)\\n    at Object.next (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/tokenizer/index.js:158:10)\\n    at Object.eat (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/tokenizer/index.js:165:12)\\n    at Object.parseObjectProperty (/home/codemonk/projects/pritchard/pritchard-electric/node_modules/@babel/parser/src/parser/expression.js:1831:14)\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3BhY2thZ2VzL21hcnMtdGhlbWUvc3JjL2NvbXBvbmVudHMvZmFxLmpzLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./packages/mars-theme/src/components/faq.js\n");
+
+/***/ })
+
+})

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { styled, connect, Global, decode } from "frontity";
 import Footer from "./footer";
 import FAQ from "react-faq-component";
@@ -13,8 +14,42 @@ const Faq = ({ state, actions }) => {
   //   if (data.isPost) {
   //     const category = state.source.post[data.id];
   //     const firstHeader = category.content.rendered;
+	//
+  
+
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+	axios.get("https://manage.pritchardelectric.net/wp-json/wp/v2/posts/64").then(res => {
+
+		let rows = []
+
+		let data = res.data.content.rendered.replace(/\n/g, '');
+		let seperated = data.replace(/<\/p>/, '|');
+		let seperatedtwo = seperated.replace(/<\/h2>/, '');
+		let seperatedthree = seperatedtwo.replace(/<h2>/, '');
+		let seperatedfour = seperatedthree.replace(/<p>/, '|')
+
+		let questAns = seperatedfour.split("|")
+		
+		//console.log(questAns)
+
+		questAns.forEach((item, index) => {
+			if(index !== questAns.length - 1){
+				if(index%2 === 0){
+					rows.push({title: item, content: ""})
+				}else{
+					rows[index-1].content = `<p>${item}</p>`
+				}
+			}
+		})
+		setFaqs(rows);
+	})
+  }, [])
+
   const data = {
     title: "FAQs",
+/*
     rows: [
       {
         title: "When should I consider calling an electrician?",
@@ -44,7 +79,7 @@ const Faq = ({ state, actions }) => {
             Confirm the electrical demand of each item on that circuit. It may
             be as easy as moving an item to another location and plugging in to
             another circuit. If you find that is not an option then a new
-            circuit to split the load may be necessary."
+            circuit to split the load may be necessary.
           </p>
         ),
       },
@@ -96,6 +131,8 @@ const Faq = ({ state, actions }) => {
         ),
       },
     ],
+    */
+rows: faqs
   };
 
   const styles = {
