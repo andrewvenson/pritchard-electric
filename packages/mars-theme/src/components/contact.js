@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { styled, connect, Global, decode } from "frontity";
+import axios from "axios"
 import Footer from "./footer";
 import ContactForm from "./contactform";
 
 const Contact = ({ state, actions }) => {
-  //useEffect(() => {
-  //actions.source.fetch("/home-post", { force: true });
-  //}, []);
+  const [contact, setContact] = useState("");
+  useEffect(() => {
 
-  //const data = state.source.get("/home-post/");
+	  async function getContact(){
+		  const results = await axios.get(`https://manage.pritchardelectric.net/wp-json/wp/v2/posts/83?timestamp=${new Date().getTime()}, {'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Expires': '0'}`);
+		  let data = results.data.content.rendered;
+		  setContact(data)
+	  }
 
-  //   if (data.isPost) {
-  //     const category = state.source.post[data.id];
-  //     const firstHeader = category.content.rendered;
-
-  const margin0 = {
-    margin: 0,
-  };
+	  getContact()
+  }, [])
 
   return (
     <main
@@ -46,7 +45,9 @@ const Contact = ({ state, actions }) => {
             textAlign: "center",
             color: "white",
           }}
+	  dangerouslySetInnerHTML={{__html: contact}}
         >
+	  {/*
           <strong>Pritchard Electric, LLC</strong>
           <p>Austin, TX 78754</p>
           <strong>Call Us</strong>
@@ -61,6 +62,8 @@ const Contact = ({ state, actions }) => {
           <p style={margin0}>Fri: 8:00AM-5:00PM</p>
           <p style={margin0}>Sat: Closed</p>
           <p style={margin0}>Sun: Closed</p>
+	  */}
+
         </div>
       </article>
 

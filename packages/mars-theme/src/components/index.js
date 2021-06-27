@@ -215,6 +215,14 @@ const Theme = ({ state }) => {
     .sideNav div a:hover {
       color: #f4bb36;
     }
+
+    .margin0 {
+      margin: 0px !important;
+    }
+
+    .marginbottom0 {
+      margin-bottom: 0px !important;
+    }
   `;
 
   return (
